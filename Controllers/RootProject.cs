@@ -1,0 +1,38 @@
+﻿// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+using System;
+using System.Collections.Generic;
+
+public class Data
+{
+    public int ProductId { get; set; }
+    public int ProductCategoryId { get; set; }
+    public object ProductCategory { get; set; }
+    public string Name { get; set; }
+    public string Thumbnail { get; set; }
+    public string Slug { get; set; }
+    public string Description { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public string CreatedBy { get; set; }
+    public DateTime ModifiedDate { get; set; }
+    public string ModifiedBy { get; set; }
+}
+
+public class Image
+{
+    public int ProductImageId { get; set; }
+    public int ProductId { get; set; }
+    public string Title { get; set; }
+    public string ImageUrl { get; set; }
+    public object CreatedBy { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public object ModifiedDate { get; set; }
+    public object ModifiedBy { get; set; }
+    public object Thumbnail { get; set; }
+}
+
+public class RootProject
+{
+    public Data data { get; set; }
+    public List<Image> images { get; set; }
+}
+

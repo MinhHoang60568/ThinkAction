@@ -1,0 +1,426 @@
+﻿@{
+    var allServices = (List<Service>)ViewBag.Data;
+}
+<title>Dịch Vụ</title>
+<div id="content" class="c-site-content">
+    <main id="main" role="main" itemprop="mainContentOfPage" class="c-main homepage">
+        <div id="c-portfolio-block" class="o-vc-layout">
+            <section @*data-anchor="Page 1"*@ class="o-section o-row c-section-abstract intro animated-section o-row--width-full c-service--section s-color-scheme">
+                <img class="o-hidden-xs o-hidden-md o-hidden-sm background-project" src="~/images/background-project.png" />
+                <img class="o-hidden-lg background-design-mobile" src="~/images/background-design-mobile.png" />
+                @*<div class="c-empty-space c-empty-space--lg o-hidden-xs o-hidden-sm"></div>*@
+            </section>
+            <section class="o-section o-row o-row--width-full s-color-scheme">
+                <div class="o-row o-row--width-normal s-color-scheme">
+                    <div class="o-container o-container--width-normal o-container--width-same">
+                        <div class="animated-section o-sm-col-12 o-lg-col-offset-1 o-lg-col-10 o-sm-col-offset-0 o-hidden-xs">
+                            <div class="c-empty-space c-empty-space--lg o-hidden-xs o-hidden-md o-hidden-sm"></div>
+                            <div class="c-empty-space c-empty-space--md o-hidden-xs o-hidden-md o-hidden-sm"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-row c-portfolio-block o-row--width-normal s-color-scheme">
+                    <div class="o-container o-container--width-normal o-container--width-same">
+                        <div class="o-sm-col-12">
+                            <div class="c-mm-vc-posts">
+                                <div class="o-row c-portfolio-block">
+                                    <div class="animated-section">
+                                        <div class="c-portfolio-block__single">
+                                            <div class="sections sections--inverted">
+                                                <div class="sections-cols">
+                                                    <div class="o-hidden-lg section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <hr class="homepage-contact__info--label__line">
+                                                                <h3 style="border-top: none !important;" class="h3 wpb_animate_when_almost_visible ro_2 fadeInUp">Thiết Kế Thương Hiệu</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section o-col-7 o-lg-col-6 o-md-col-8 о-sm-col-12 section-col-image">
+                                                        <div class="single-image">
+                                                            <div class="animated-img">
+                                                                <a href="https://thinkaction.vn/thiet-ke-thuong-hieu">
+                                                                    <video id="design-video" width="100%" height="100%" autoplay loop muted playsinline>
+                                                                        <source type="video/mp4"> Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <h3 class="h3 o-hidden-xs o-hidden-sm o-hidden-md wpb_animate_when_almost_visible ro_2 fadeInUp">Thiết Kế Thương Hiệu</h3>
+                                                                <div class="s-cms-content wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <p id="HOMEPAGE_DESIGN_PC" class="o-hidden-xs">
+                                                                        Thiết kế luôn đóng vai trò quan trọng trong các chiến dịch Marketing của doanh nghiệp. Một cuốn Profile Company, Brochure hay một bộ Sale Kit chuyên nghiệp là công cụ đắc lực giúp doanh nghiệp tạo được ấn tượng tốt đối với khách hàng. Theo đuổi chủ nghĩa thiết kế tối giản hóa cùng 5 năm kinh nghiệm xây dựng thương hiệu khách hàng, Think & Action cam kết sẽ đem tới những ấn phẩm thiết kế hiện đại, ấn tượng giúp doanh nghiệp dễ dàng chinh phục được thị hiếu của khách hàng.
+                                                                    </p>
+                                                                    <p id="HOMEPAGE_DESIGN_MOBILE" class="o-hidden-sm o-hidden-md o-hidden-lg">
+                                                                        Theo đuổi chủ nghĩa thiết kế tối giản hóa cùng 5 năm kinh nghiệm xây dựng thương hiệu khách hàng, Think & Action cam kết sẽ đem tới những ấn phẩm thiết kế hiện đại, ấn tượng giúp doanh nghiệp dễ dàng chinh phục được thị hiếu của mọi đối tượng khách hàng.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box--hide">
+                                                                    <div class="">
+                                                                        <div id="design-services-box" class="services s-cms-content wpb_animate_when_almost_visible ro_4 fadeInUp">
+                                                                            @foreach (var item in allServices.Where(x => x.ServiceCategoryId == 1).ToList())
+                                                                            {
+                                                                                <div class="animation-holder">
+                                                                                    <div class="service-icon__holder">
+                                                                                        <div class="service-icon">
+                                                                                            <div class="animated-icon" data-icon=@item.Icon data-autoplay="true"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a href="@item.Link" class="services-icon-link">@item.Name</a>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box__readmore wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <a href="https://thinkaction.vn/thiet-ke-thuong-hieu" class="read_more">Xem thêm</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+                                    </div>
+                                    <div class="animated-section">
+                                        <div class="c-portfolio-block__single">
+                                            <div class="sections sections--normal">
+                                                <div class="sections-cols">
+                                                    <div class="o-hidden-lg section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <hr class="homepage-contact__info--label__line">
+                                                                <h3 style="border-top: none !important;" class="h3 wpb_animate_when_almost_visible ro_2 fadeInUp">Sản Xuất TVC</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section o-col-7 o-lg-col-6 o-md-col-6 о-sm-col-12 section-col-image">
+                                                        <div class="single-image">
+                                                            <div class="animated-img">
+                                                                <a href="">
+                                                                    <video id="tvc-video" width="100%" height="100%" autoplay loop muted playsinline>
+                                                                        <source type="video/mp4"> Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section section-col-text o-lg-col-5 o-lg-col-offset-1">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <h3 class="h3 	o-hidden-xs o-hidden-sm o-hidden-md  wpb_animate_when_almost_visible ro_2 fadeInUp">Sản Xuất TVC</h3>
+                                                                <div class="s-cms-content wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <p id="HOMEPAGE_TVC_PC" class="o-hidden-xs">
+                                                                        TVC cho doanh nghiệp, sản phẩm là chìa khoá để lan toả giá trị thương hiệu, tăng cao mức độ nhận biết của người tiêu dùng.<br />
+                                                                        Đầu tư vào dịch vụ Video Marketing chuyên nghiệp giúp doanh nghiệp truyền tải trọn vẹn thông điệp tới khách hàng.<br />
+                                                                        Think & Action Agency tự hào là địa chỉ cung cấp dịch vụ sản xuất Video Marketing uy tín, chuyên nghiệp được hàng trăm doanh nghiệp tin tưởng và lựa chọn.
+                                                                    </p>
+                                                                    <p id="HOMEPAGE_TVC_MOBILE" class="o-hidden-sm o-hidden-md o-hidden-lg">
+                                                                        TVC cho doanh nghiệp, sản phẩm là chìa khoá để lan toả giá trị thương hiệu, tăng cao mức độ nhận biết của người tiêu dùng.<br />
+                                                                        Đầu tư vào dịch vụ Video Marketing chuyên nghiệp giúp doanh nghiệp truyền tải trọn vẹn thông điệp tới khách hàng.<br />
+                                                                        Think & Action Agency tự hào là địa chỉ cung cấp dịch vụ sản xuất Video Marketing uy tín, chuyên nghiệp được hàng trăm doanh nghiệp tin tưởng và lựa chọn.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box--hide">
+                                                                    <div class="">
+                                                                        <div class="services s-cms-content wpb_animate_when_almost_visible ro_4 fadeInUp">
+                                                                            @foreach (var item in allServices.Where(x => x.ServiceCategoryId == 2).ToList())
+                                                                            {
+                                                                                <div class="animation-holder">
+                                                                                    <div class="service-icon__holder">
+                                                                                        <div class="service-icon">
+                                                                                            <div class="animated-icon" data-icon=@item.Icon data-autoplay="true"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a href="@item.Link" class="services-icon-link">@item.Name</a>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box__readmore wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <a href="https://thinkaction.vn/tvc" class="read_more">Xem thêm</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-empty-space c-empty-space--lg o-hidden-xs"></div>
+                                    </div>
+                                    <div class="animated-section">
+                                        <div class="c-portfolio-block__single">
+                                            <div class="sections sections--inverted">
+                                                <div class="sections-cols">
+                                                    <div class="o-hidden-lg section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <hr class="homepage-contact__info--label__line">
+                                                                <h3 style="border-top: none !important;" class="h3 wpb_animate_when_almost_visible ro_2 fadeInUp">Digital Marketing</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section o-col-7 o-lg-col-6 o-md-col-6 о-sm-col-12 section-col-image">
+                                                        <div class="single-image">
+                                                            <div class="animated-img">
+                                                                <a href="">
+                                                                    <video id="digital_marketing-video" width="100%" height="100%" autoplay loop muted playsinline>
+                                                                        <source type="video/mp4"> Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <h3 class="h3 o-hidden-xs o-hidden-sm o-hidden-md wpb_animate_when_almost_visible ro_2 fadeInUp">Digital Marketing</h3>
+                                                                <div class="s-cms-content wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <p id="HOMEPAGE_DIGITAL_MARKERTING_PC" class="o-hidden-xs">
+                                                                        Giúp doanh nghiệp xây dựng ngôi nhà số trên đa nền tảng, gói giải pháp truyền thông quảng bá thương hiệu thông qua nền tảng số và internet mang đến tính hiệu quả, khả năng lan truyền nhanh chóng và tiết kiệm chi phí, xây dựng mô hình thương hiệu số sinh động, là công cụ truyền thông cần thiết cho mọi lĩnh vực hiện nay.
+                                                                    </p>
+                                                                    <p id="HOMEPAGE_DIGITAL_MARKERTING_MOBILE" class="o-hidden-sm o-hidden-md o-hidden-lg">
+                                                                        Giúp doanh nghiệp xây dựng ngôi nhà số trên đa nền tảng, gói giải pháp truyền thông quảng bá thương hiệu thông qua nền tảng số và internet mang đến tính hiệu quả, khả năng lan truyền nhanh chóng và tiết kiệm chi phí, xây dựng mô hình thương hiệu số sinh động, là công cụ truyền thông cần thiết cho mọi lĩnh vực hiện nay.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box--hide">
+                                                                    <div class="">
+                                                                        <div class="services s-cms-content wpb_animate_when_almost_visible ro_4 fadeInUp">
+                                                                            @foreach (var item in allServices.Where(x => x.ServiceCategoryId == 3).ToList())
+                                                                            {
+                                                                                <div class="animation-holder">
+                                                                                    <div class="service-icon__holder">
+                                                                                        <div class="service-icon">
+                                                                                            <div class="animated-icon" data-icon=@item.Icon data-autoplay="true"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a href="@item.Link" class="services-icon-link">@item.Name</a>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box__readmore wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <a href="https://thinkaction.vn/digital-marketing" class="read_more">Xem thêm</a>
+                                                                </div>
+                                                                <div class="c-empty-space c-empty-space--xl o-hidden-xs"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="animated-section">
+                                        <div class="c-portfolio-block__single">
+                                            <div class="sections sections--normal">
+                                                <div class="sections-cols">
+                                                    <div class="o-hidden-lg section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <hr class="homepage-contact__info--label__line">
+                                                                <h3 style="border-top: none !important;" class="h3 wpb_animate_when_almost_visible ro_2 fadeInUp">Website & Mobile App</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section o-col-7 o-lg-col-6 o-md-col-6 о-sm-col-12 section-col-image">
+                                                        <div class="single-image">
+                                                            <div class="animated-img">
+                                                                <a href="">
+                                                                    <video id="web_mobile-video" width="100%" height="100%" autoplay loop muted playsinline>
+                                                                        <source type="video/mp4"> Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section section-col-text o-lg-col-5 o-lg-col-offset-1">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <h3 class="h3 o-hidden-xs o-hidden-sm o-hidden-md wpb_animate_when_almost_visible ro_2 fadeInUp">Website & Mobile App</h3>
+                                                                <div class="s-cms-content wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <p id="HOMEPAGE_WEB_MOBILE_APP_PC" class="o-hidden-xs">
+                                                                        Giá trị của Website và App Mobile mang lại nhiều cơ hội để bạn tiếp cận gần hơn tới khách hàng, tối ưu hoá lợi nhuận và gia tăng chuyển đổi số. Nắm bắt được nhu cầu trên, Think & Action đã phát triển mảng Website và Mobile App phục vụ các doanh nghiệp, trong lĩnh vực thương mại, dịch vụ và sản xuất với chức năng cá nhân hoá riêng biệt, mang tính tương tác cao với người dùng
+                                                                    </p>
+                                                                    <p id="HOMEPAGE_WEB_MOBILE_APP_MOBILE" class="o-hidden-sm o-hidden-md o-hidden-lg">
+                                                                        Giá trị của Website và App Mobile mang lại nhiều cơ hội để bạn tiếp cận gần hơn tới khách hàng, tối ưu hoá lợi nhuận và gia tăng chuyển đổi số. Nắm bắt được nhu cầu trên, Think & Action đã phát triển mảng Website và Mobile App phục vụ các doanh nghiệp, trong lĩnh vực thương mại, dịch vụ và sản xuất với chức năng cá nhân hoá riêng biệt, mang tính tương tác cao với người dùng
+                                                                    </p>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box--hide">
+                                                                    <div class="">
+                                                                        <div class="services s-cms-content wpb_animate_when_almost_visible ro_4 fadeInUp">
+                                                                            @foreach (var item in allServices.Where(x => x.ServiceCategoryId == 4).ToList())
+                                                                            {
+                                                                                <div class="animation-holder">
+                                                                                    <div class="service-icon__holder">
+                                                                                        <div class="service-icon">
+                                                                                            <div class="animated-icon" data-icon=@item.Icon data-autoplay="true"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a href="@item.Link" class="services-icon-link">@item.Name</a>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box__readmore wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <a href="https://thinkaction.vn/web-mobile-app" class="read_more">Xem thêm</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-empty-space c-empty-space--lg o-hidden-xs"></div>
+                                    </div>
+                                    <div class="animated-section">
+                                        <div class="c-portfolio-block__single">
+                                            <div class="sections sections--inverted">
+                                                <div class="sections-cols">
+                                                    <div class="o-hidden-lg section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <hr class="homepage-contact__info--label__line">
+                                                                <h3 style="border-top: none !important;" class="h3 wpb_animate_when_almost_visible ro_2 fadeInUp">Tổ Chức Sự Kiện</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section o-col-7 o-lg-col-6 o-md-col-6 о-sm-col-12 section-col-image">
+                                                        <div class="single-image">
+                                                            <div class="animated-img">
+                                                                <a href="">
+                                                                    <video id="event-video" width="100%" height="100%" autoplay loop muted playsinline>
+                                                                        <source type="video/mp4"> Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section section-col-text o-lg-col-6">
+                                                        <div class="single-text">
+                                                            <div class="inner">
+                                                                <h3 class="h3 o-hidden-xs o-hidden-sm o-hidden-md  wpb_animate_when_almost_visible ro_2 fadeInUp">Tổ Chức Sự Kiện</h3>
+                                                                <div class="s-cms-content wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <p id="HOMEPAGE_EVENTS_PC" class="o-hidden-xs">
+                                                                        Với đội ngũ nhân sự  hơn 10 năm kinh nghiệm trong lĩnh vực tổ chức event và các chương trình lớn, bằng năng lực cùng sức sáng tạo của mình, chúng tôi giúp quý khách hàng lập kế hoạch và tổ chức những sự kiện chất lượng đỉnh cao.
+                                                                    </p>
+                                                                    <p id="HOMEPAGE_EVENTS_MOBILE" class="o-hidden-sm o-hidden-md o-hidden-lg">
+                                                                        Với đội ngũ nhân sự  hơn 10 năm kinh nghiệm trong lĩnh vực tổ chức event và các chương trình lớn, bằng năng lực cùng sức sáng tạo của mình, chúng tôi giúp quý khách hàng lập kế hoạch và tổ chức những sự kiện chất lượng đỉnh cao.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box--hide">
+                                                                    <div class="">
+                                                                        <div class="services s-cms-content wpb_animate_when_almost_visible ro_4 fadeInUp">
+                                                                            @foreach (var item in allServices.Where(x => x.ServiceCategoryId == 5).ToList())
+                                                                            {
+                                                                                <div class="animation-holder">
+                                                                                    <div class="service-icon__holder">
+                                                                                        <div class="service-icon">
+                                                                                            <div class="animated-icon" data-icon=@item.Icon data-autoplay="true"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a href="@item.Link" class="services-icon-link">@item.Name</a>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="o-row c-portfolio-box__readmore wpb_animate_when_almost_visible ro_3 fadeInUp">
+                                                                    <a href="https://thinkaction.vn/to-chuc-su-kien" class="read_more">Xem thêm</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-empty-space c-empty-space--xl o-hidden-xs"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</div>
+<script src="~/js/video.js"></script>
+<script src="~/js/jquery.js"></script>
+<script src="~/js/jquery-migrate.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        if (true) {
+
+            $('#design-video source').attr('src', '/videos/design_new.mp4');
+            $('#design-video').get(0).load();
+            $('#design-video').get(0).play();
+
+            $('#tvc-video source').attr('src', '/videos/tvc_new.mp4');
+            $('#tvc-video').get(0).load();
+            $('#tvc-video').get(0).play();
+
+            $('#digital_marketing-video source').attr('src', '/videos/digital_marketing_new.mp4');
+            $('#digital_marketing-video').get(0).load();
+            $('#digital_marketing-video').get(0).play();
+
+            $('#web_mobile-video source').attr('src', '/videos/web_mobile_new.mp4');
+            $('#web_mobile-video').get(0).load();
+            $('#web_mobile-video').get(0).play();
+
+            $('#event-video source').attr('src', '/videos/event_new.mp4');
+            $('#event-video').get(0).load();
+            $('#event-video').get(0).play();
+            //new Pageable("#c-portfolio-block");
+        }
+        else {
+            $('#logo-video source').attr('src', '');
+        }
+    });
+</script>
+<script src="~/js/jquery.js"></script>
+<script src="~/js/jquery-migrate.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#nav-services').addClass("active");
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        var settings = {
+              "url": "https://cms.thinkaction.vn/all-options",
+              "method": "GET",
+              "timeout": 0,
+            };
+
+            $.ajax(settings).done(function (response) {
+                var data = response.data;
+
+                $('#HOMEPAGE_DESIGN_PC').text(data.find(x => x.Code === 'HOMEPAGE_DESIGN').ValuePC);
+                $('#HOMEPAGE_DESIGN_MOBILE').text(data.find(x => x.Code === 'HOMEPAGE_DESIGN').ValueMobile);
+
+                $('#HOMEPAGE_TVC_PC').text(data.find(x => x.Code === 'HOMEPAGE_TVC').ValuePC);
+                $('#HOMEPAGE_TVC_MOBILE').text(data.find(x => x.Code === 'HOMEPAGE_TVC').ValueMobile);
+
+                $('#HOMEPAGE_DIGITAL_MARKERTING_PC').text(data.find(x => x.Code === 'HOMEPAGE_DIGITAL_MARKERTING').ValuePC);
+                $('#HOMEPAGE_DIGITAL_MARKERTING_MOBILE').text(data.find(x => x.Code === 'HOMEPAGE_DIGITAL_MARKERTING').ValueMobile);
+
+                $('#HOMEPAGE_WEB_MOBILE_APP_PC').text(data.find(x => x.Code === 'HOMEPAGE_WEB_MOBILE_APP').ValuePC);
+                $('#HOMEPAGE_WEB_MOBILE_APP_MOBILE').text(data.find(x => x.Code === 'HOMEPAGE_WEB_MOBILE_APP').ValueMobile);
+
+                $('#HOMEPAGE_EVENTS_PC').text(data.find(x => x.Code === 'HOMEPAGE_EVENTS').ValuePC);
+                $('#HOMEPAGE_EVENTS_MOBILE').text(data.find(x => x.Code === 'HOMEPAGE_EVENTS').ValueMobile);
+
+                $(".zalo-link").attr("href", data.find(x => x.Code === 'CONTACT_ZALO_LINK').ValuePC);
+            });
+    });
+</script>

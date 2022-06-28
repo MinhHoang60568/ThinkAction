@@ -1,0 +1,647 @@
+﻿@font-face {
+    font-family: 'ViettelPay-Regular';
+    src: url(../fonts/ViettelPay-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ViettelPay-ExtraBold';
+    src: url(../fonts/ViettelPay-ExtraBold.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ViettelPay-Medium';
+    src: url(../fonts/ViettelPay-Medium.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ViettelPay-Light';
+    src: url(../fonts/ViettelPay-Light.ttf) format('truetype');
+    font-display: swap;
+}
+
+div#hs-eu-cookie-confirmation {
+    background: #000 !important;
+}
+
+    div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+        background: #000 !important;
+    }
+
+        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+            color: #fff !important;
+        }
+
+div#hs-eu-cookie-confirmation {
+    color: #fff !important;
+}
+
+    div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+        max-width: 91% !important;
+    }
+
+        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-cookie-settings-button {
+            color: #fff !important;
+            text-decoration: underline !important;
+        }
+
+        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a,
+        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a:hover {
+            color: #fff !important;
+            text-decoration: underline !important;
+        }
+
+body #hs-modal #hs-modal-content #hs-modal-body #hs-modal-body-container .hs-category-description h3 {
+    font-family: "ViettelPay-Regular" !important;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+body #hs-modal #hs-modal-content #hs-modal-body #hs-modal-body-container .hs-category-description p {
+    font-family: "ViettelPay-Regular" !important;
+    color: #fff !important;
+}
+
+body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
+    background: none !important;
+    border-color: #fff !important;
+}
+
+@media (max-width: 800px) {
+    body #hs-modal #hs-modal-content {
+        height: auto !important;
+    }
+
+        body #hs-modal #hs-modal-content #hs-modal-body #hs-modal-body-container {
+            overflow: hidden !important;
+            overflow-y: scroll !important;
+        }
+
+    #hs-modal #hs-modal-content #hs-modal-header {
+        top: 0;
+    }
+}
+
+
+.c-tile__content.c-event-date {
+    display: none;
+}
+
+.case-study-tile-invert .c-badge-block--has-background .c-badge-block__el {
+    background-color: #f5f9fa !important;
+    border: 1px solid #f5f9fa !important;
+}
+
+/**
+         // ### FOSS tile
+         */
+.c-mosaic__item--featured .c-entry--24609 .c-tile__main-heading {
+    color: #fff;
+}
+
+.c-mosaic__item--featured .c-entry--24609 .c-tile__excerpt {
+    max-width: 47rem;
+}
+
+/**
+         // ### Pops tile
+         */
+.c-mosaic__item--featured .c-entry--24281 .c-entry-header {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__image {
+        transform: translate(-5%, -7.5%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__image {
+        transform: translate(-3%, 0);
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__img {
+        object-position: 38% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__bgnd-img {
+        background-position: 38% 50%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__img {
+        object-position: 30% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--24281 .c-entry-header__bgnd-img {
+        background-position: 30% 50%;
+    }
+}
+
+/**
+         // ### WeVest tile
+         */
+@media screen and (max-width: 1279px) {
+    .c-mosaic__item--featured .c-entry--24354 .c-tile__excerpt {
+        max-width: 48rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .c-mosaic__item--featured .c-entry--24354 .c-tile__excerpt {
+        max-width: 33rem;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .c-mosaic__item--featured .c-entry--24354 .c-entry-header__img {
+        object-position: 35% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--24354 .c-entry-header__bgnd-img {
+        background-position: 35% 50%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .c-mosaic__item--featured .c-entry--24354 .c-entry-header__img {
+        object-position: 35% 7.5rem;
+    }
+
+    .c-mosaic__item--featured .c-entry--24354 .c-entry-header__bgnd-img {
+        background-position: 35% 7.5rem;
+    }
+}
+
+/**
+         // ### Blackriver tile
+         */
+.c-mosaic__item--featured .c-entry--22069 .c-tile__excerpt {
+    /* text-shadow: 0 0 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.5); */
+}
+
+@media screen and (max-width: 899px) {
+    .c-mosaic__item--featured .c-entry--22069 .c-entry-header__img {
+        object-position: 40% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--22069 .c-entry-header__bgnd-img {
+        background-position: 40% 50%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .c-mosaic__item--featured .c-entry--22069 .c-entry-header__img {
+        object-position: 30% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--22069 .c-entry-header__bgnd-img {
+        background-position: 30% 50%;
+    }
+}
+
+/**
+         // ### Adventium Labs tile
+         */
+.c-mosaic__item--featured .c-entry--24243 .c-entry-header__img {
+    object-position: 65% 50%;
+}
+
+.c-mosaic__item--featured .c-entry--24243 .c-entry-header__bgnd-img {
+    background-position: 65% 50%;
+}
+
+@media screen and (min-width: 1200px) {
+    .c-mosaic__item--featured .c-entry--24243 .c-entry-header__img {
+        object-position: 100% 50%;
+    }
+
+    .c-mosaic__item--featured .c-entry--24243 .c-entry-header__bgnd-img {
+        background-position: 100% 50%;
+    }
+}
+
+/**
+         // ### POPS tile
+         */
+.c-mosaic__item--full-width .c-entry--27957 .c-entry-header__img {
+    object-position: 65% 0%;
+}
+
+.c-mosaic__item--full-width .c-entry--27957 .c-entry-header__bgnd-img {
+    background-position: 65% 0%;
+}
+
+/**
+         // ### WeVest tile
+         */
+.c-mosaic__item--full-width .c-entry--27966 .c-entry-header__img {
+    object-position: 100% 50%;
+}
+
+.c-mosaic__item--full-width .c-entry--27966 .c-entry-header__bgnd-img {
+    background-position: 100% 50%;
+}
+
+/**
+         // ### Blackriver tile
+         */
+.c-mosaic__item--full-width .c-entry--25831 .c-entry-header__img {
+    object-position: 40% 50%;
+}
+
+.c-mosaic__item--full-width .c-entry--25831 .c-entry-header__bgnd-img {
+    background-position: 40% 50%;
+}
+
+/**
+         // ## Mosaics overrides
+         */
+/** WeVest tile */
+.c-entry--22135.c-entry--tile .c-entry__header_img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.c-mosaic--21948 .c-mosaic__item:not(:first-child) .c-entry--22216 .c-tile__event-day,
+.c-mosaic--21948 .c-mosaic__item:not(:first-child) .c-entry--22216 .c-tile__event-month,
+.c-mosaic--21948 .c-mosaic__item:not(:first-child) .c-entry--22216 .c-tile__heading {
+    color: #3F9BE7;
+}
+
+/**
+         // AWS Technologies block
+         */
+.o-row--aws-technologies {
+    position: relative;
+}
+
+    .o-row--aws-technologies .mm-vc-posts {
+        padding-left: 37.5%;
+    }
+
+    .o-row--aws-technologies .c-badge-block {
+        margin-top: 0;
+    }
+
+    .o-row--aws-technologies .c-badge-block__el {
+        width: 20%;
+    }
+
+.c-aws-partner-logo {
+    padding: 5rem 3rem;
+}
+
+    .c-aws-partner-logo img {
+        display: block;
+        margin: 0 auto;
+        width: 251px;
+    }
+
+@media screen and (min-width: 900px) {
+    .c-aws-partner-logo {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 37.5%;
+    }
+}
+
+/**
+         // Quick fix add sections borders
+         */
+.has-border {
+    border-top: 2px solid #eff3f4 !important;
+}
+
+/**
+         * Temp fix: Project page tiles
+         */
+.c-project__col {
+    display: flex;
+    justify-content: center;
+}
+
+.c-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.c-project__btn {
+    margin-bottom: 0;
+}
+
+.o-row--bg-gray::after {
+    height: 27%;
+}
+
+.wpb_animate_when_almost_visible {
+    opacity: 1;
+}
+
+.partner-logos .o-container {
+    justify-content: center;
+}
+
+.max-width-100 {
+    max-width: 100% !important;
+}
+
+.bg-c-212121 {
+    background-color: #212121 !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-20 {
+    margin-top: 2rem !important;
+}
+
+.mt-40 {
+    margin-top: 4rem !important;
+}
+
+@media (max-width: 767px) {
+    .mt-40 {
+        margin-top: 2rem !important;
+    }
+}
+
+.font-extra-bold {
+    font-family: ViettelPay-ExtraBold !important;
+}
+
+.pd-left-10 {
+    padding-left: 10rem !important;
+}
+
+.background-about-us {
+    position: absolute;
+    top: -10rem;
+    right: -2rem;
+    max-width: 1300px;
+    width: calc(70% + 150px);
+}
+
+.background-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(90% + 130px);
+}
+
+.background-design {
+    position: absolute;
+    top: -9.5rem;
+    right: -2rem;
+    width: calc(80% + 130px);
+}
+
+.background-project {
+    position: absolute;
+    top: -8.5rem;
+    right: -2rem;
+    width: calc(80% + 160px);
+}
+
+.background-design-mobile {
+    position: absolute;
+    top: -7rem;
+    right: -11rem;
+    width: calc(85%);
+}
+
+.background-about-us-vision {
+    position: absolute;
+    /*top: 90rem;*/
+    left: 0;
+    width: 100%;
+}
+
+.background-about-us-why {
+    position: absolute;
+    left: -200px;
+    top: -350px;
+}
+
+.homepage-line-right {
+    position: absolute;
+    margin-top: 25rem;
+    right: 0;
+}
+
+.homepage-line-left {
+    position: absolute;
+    margin-top: 65rem;
+    left: 0;
+}
+
+.homepage-4dot-right {
+    position: absolute;
+    margin-top: 45rem;
+    right: 10rem;
+}
+
+.homepage-4dot-left {
+    position: absolute;
+    margin-top: 45rem;
+    left: 10rem;
+}
+
+.design-round-left {
+    position: absolute;
+    margin-top: 10%;
+    left: -15%;
+    width: 30%;
+}
+
+.tvc-round-right {
+    position: absolute;
+    margin-top: 1%;
+    right: -15%;
+    height: 11%;
+}
+
+.marketing-round-left {
+    position: absolute;
+    left: -15%;
+    width: 35%;
+}
+
+.mobile-round-right {
+    position: absolute;
+    margin-top: 5%;
+    right: -12%;
+    width: 27%;
+}
+
+.event-round-left {
+    position: absolute;
+    margin-top: 15%;
+    left: -15%;
+    width: 35%;
+}
+
+.partner-round-right {
+    position: absolute;
+    margin-top: 25rem;
+    right: -10%;
+    /*height: 15%;*/
+}
+
+.homepage-marketing {
+    position: absolute;
+    margin-top: 15rem;
+    left: 18%;
+}
+
+.c-menu-footer__item__address-2-row {
+    margin-bottom: 1rem !important;
+}
+
+    .c-menu-footer__item__address-2-row a {
+        line-height: 2rem !important;
+    }
+
+.c-menu-footer__item__address {
+    background-image: url(../../images/footer/location.svg);
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    height: 3.2rem;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: left center;
+}
+
+.c-menu-footer__item__phone {
+    background-image: url(../../images/footer/phone.svg);
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    background-position: left center;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-menu-footer__item__web {
+    background-image: url(../../images/footer/web.svg);
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: left center;
+}
+
+.c-menu-footer__item__email {
+    background-image: url(../../images/footer/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 3rem;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1199px) {
+    .pd-left-10 {
+        padding-left: 0 !important;
+    }
+
+    .homepage-line-right {
+        display: none !important;
+    }
+
+    .homepage-line-left {
+        display: none !important;
+    }
+
+    .homepage-4dot-right {
+        display: none !important;
+    }
+
+    .homepage-4dot-left {
+        display: none !important;
+    }
+
+    .homepage-marketing {
+        display: none !important;
+    }
+
+    .design-round-left {
+        display: none !important;
+    }
+
+    .tvc-round-right {
+        display: none !important;
+    }
+
+    .marketing-round-left {
+        display: none !important;
+    }
+
+    .mobile-round-right {
+        display: none !important;
+    }
+
+    .event-round-left {
+        display: none !important;
+    }
+
+    .partner-round-right {
+        display: none !important;
+    }
+}
+
+
+.homepage-registration-input {
+    display: inline-block !important;
+    width: 50% !important;
+    border-radius: 30px !important;
+    height: 3.5rem !important;
+    float: left !important;
+    margin-right: 1%;
+}
+
+.homepage-partner-text {
+    border-top: none !important;
+    position: absolute;
+    border-bottom: 2px solid #F15822;
+    left: 50%;
+    padding-bottom: 1rem !important;
+    text-transform: uppercase;
+    -moz-transform: translateX(-50%) translateY(-50%) !important;
+    -webkit-transform: translateX(-50%) translateY(-50%) !important;
+    transform: translateX(-50%) translateY(-50%) !important;
+    font-family: "ViettelPay-Regular" !important;
+    font-weight: 800;
+    font-size: 3.5rem !important;
+}
+
+.mt-50 {
+    margin-bottom: 5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}

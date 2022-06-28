@@ -1,0 +1,279 @@
+﻿<title>Tin Tức</title>
+<div id="content" class="c-site-content">
+    <main id="main" role="main" itemprop="mainContentOfPage" class="c-main homepage-news">
+        <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+        <div class="o-vc-layout">
+            <section class="o-section o-row animated-section o-row--width-full s-color-scheme">
+                <img class="o-hidden-xs o-hidden-md o-hidden-sm background-design" src="~/images/background-design.png" />
+                <img class="o-hidden-lg background-design-mobile" src="~/images/background-design-mobile.png" />
+                <div class="o-row o-row--width-normal s-color-scheme">
+                    <div class="o-container o-container--width-normal o-container--width-same">
+                        <div class="o-sm-col-12 o-lg-col-8 o-md-col-12 o-xs-col-12">
+                            <div class="c-empty-space c-empty-space--md"></div>
+                            @*<div class="c-empty-space c-empty-space--lg o-hidden-xs"></div>*@
+                            <div id="first-news-content">
+                            </div>
+                            <div class="c-empty-space c-empty-space--lg o-hidden-xs o-hidden-sm o-hidden-md"></div>
+                            <div id="news-Content">
+                                @*<div class="c-empty-space c-empty-space--lg"></div>*@
+                            </div>
+                        </div>
+                        <div class=" ro_2 o-sm-col-12 o-lg-col-3 o-md-col-12 o-hidden-xs _now">
+                            <div class="c-empty-space c-empty-space--lg"></div>
+                            <div class="c-vc-column-text">
+                                <div class=" s-cms-content  fadeInUp">
+                                    <h4 class="c-headings-block__special">Bài viết gần đây</h4>
+                                </div>
+                            </div>
+                            <div id="releated-news-by-category">
+                            </div>
+                            <div class="c-empty-space c-empty-space--sm"></div>
+                            <div class="c-vc-column-text">
+                                <div class=" s-cms-content  fadeInUp">
+                                    <h4 class="c-headings-block__special">Có thể bạn quan tâm</h4>
+                                </div>
+                            </div>
+                            <div id="releated-news-by-hashtag">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pagination-container"></div>
+                <div class="o-row o-row--width-normal s-color-scheme">
+                    <div class="o-container o-container--width-normal o-container--width-same">
+                        <div class="o-sm-col-12 o-hidden-lg o-hidden-md o-hidden-sm">
+                            <div class="c-empty-space c-empty-space--xs"></div>
+                            <div class="c-section-accordion c-section-accordion__single">
+                                <h3 class="c-section-accordion__heading h6  fadeInUp _now"
+                                    style="">
+                                    Bài viết gần đây
+                                </h3>
+                                <div class="c-section-accordion__content">
+                                    <ul id="mobile-releated-news-by-category" class="c-list-with-icons c-list-gray-dots animated-section">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-section-accordion c-section-accordion__single">
+                                <h3 class="c-section-accordion__heading h6  fadeInUp _now"
+                                    style="">
+                                    Có thể bạn quan tâm
+                                </h3>
+                                <div class="c-section-accordion__content">
+                                    <ul id="mobile-releated-news-by-hashtag" class="c-list-with-icons c-list-gray-dots animated-section">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>        
+    </main>
+</div>
+
+<script src="~/js/jquery.js"></script>
+<script src="~/js/jquery-migrate.js"></script>
+<script src="~/js/pagination.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        var settings = {
+              "url": "https://cms.thinkaction.vn/homepage-tin-tuc?pageIndex=1",
+              "method": "GET",
+              "timeout": 0,
+            };
+
+            $.ajax(settings).done(function (response) {            
+                var firstNews = response.data[0];
+                var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + firstNews.Slug + "&id=" + firstNews.ArticleId;
+                var firstNewsImageLink = "https://cms.thinkaction.vn/" + firstNews.Thumbnail;
+                var firstNewsHtml = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block  c-headings-block--no-padding">' +
+                                    '<div class="o-container">' +
+                                    '<div class="o-hidden-lg c-headings-block__content o-lg-col-6 o-sm-col-12 c-headings-block__content--big">' +
+                                            '<div class=" ro_1 h4 _now c-headings-block__content-title">' +
+                                             ''+ firstNews.Title +
+                                            '</div>' +
+                                        '</div>' +
+                                     '   <div class="c-headings-block__icon  ro_1 o-lg-col-6 o-sm-col-12 _now">' +
+                                     
+                                      '      <div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load   ro_1 o-lazy-load--complete _now">' +
+                                       '         <figure class="wpb_wrapper vc_figure">' +
+                                        '            <div class="vc_single_image-wrapper vc_box_border_grey">' +
+                                         '               <img src="' + firstNewsImageLink + '"' +
+                                          '                   class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"' +
+                                           '                  alt="News">' +
+                                             '           <noscript>' +
+                                              '               <img src="' + firstNewsImageLink + '"' +
+                                               '                  class="vc_single_image-img attachment-full"' +
+                                                '                 alt="News">' +
+                                                 '       </noscript>' +
+                                                  '  </div>' +
+                                                '</figure>' +
+                                            '</div>' +
+                                        '</div>' +
+                                        '<div class="c-headings-block__content o-lg-col-6 o-sm-col-12 c-headings-block__content--big">' +
+                                            '<div class=" ro_1 o-hidden-xs o-hidden-sm o-hidden-md h4 _now c-headings-block__content-title">' +
+                                             ''+ firstNews.Title +
+                                            '</div>' +
+                                            '<div class="c-headings-block__sub   c-headings-block__sub--gray _now">' +
+                                                '<p>' +
+                                                 ''+ firstNews.SummaryContent +
+                                                '</p>' +
+                                            '</div>' +                                            
+                                               '<div class="o-row c-portfolio-box__readmore _now  fadeInUp">' +
+                                                                    '<a class="read_more">Xem thêm</a>' +
+                                                                '</div>' +
+                                        '</div>' +
+                                    '</div>' +
+                                    '<div class="c-empty-space c-empty-space--xs o-hidden-lg"></div>'+
+                                    '<hr class="o-hidden-lg homepage-contact__info--label__line" style="width: 100% !important;">' +
+                                    '<div class="c-empty-space c-empty-space--xs o-hidden-lg"></div>'+
+                                '</div>';                                
+                                $('#first-news-content').append(firstNewsHtml);
+
+                        var data = response.data.slice(1);
+                        $('#pagination-container').pagination({
+                            dataSource: data,
+                             pageSize: 5,
+                            callback: function(data, pagination) {
+                                 var rawhtml = '';                                 
+                                 $.each(data, function (key, value) {
+                                    var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
+                                    var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                                    var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block  c-headings-block--no-padding">' +
+                                            '<div class="o-container">' +
+                                                   '<div class="o-hidden-lg c-headings-block__content o-lg-col-9 o-sm-col-12 c-headings-block__content--small">' +
+                                                    '<div class=" ro_1 h4 _now c-headings-block__content-title">' +
+                                                        ''+ value.Title +
+                                                    '</div>' +
+                                                    
+                                                '</div>' +
+                                                '<div class="c-headings-block__icon  ro_1 o-lg-col-3 o-sm-col-12 _now">' +
+                                                    '<div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load   ro_1 o-lazy-load--complete _now">' +
+                                                        '<figure class="wpb_wrapper vc_figure">' +
+                                                            '<div class="vc_single_image-wrapper   vc_box_border_grey">' +
+                                                                '<img src="' + imageLink + '"' +
+                                                                     'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"' +
+                                                                     'alt="News Image">' +
+                                                                    '<noscript><img src="' + imageLink + '"' +
+                                                                         'class="vc_single_image-img attachment-full"' +
+                                                                         'alt="News Image" </noscript>' +
+                                                            '</div>' +
+                                                        '</figure>' +
+                                                    '</div>' +
+                                                '</div>' +
+                                                '<div class="c-headings-block__content o-lg-col-9 o-sm-col-12 c-headings-block__content--small">' +
+                                                    '<div class=" ro_1 o-hidden-xs o-hidden-sm o-hidden-md h4 _now c-headings-block__content-title">' +
+                                                        ''+ value.Title +
+                                                    '</div>' +
+                                                     '<div class="c-headings-block__sub c-headings-block__sub--gray _now">' +
+                                                        '<p>' +
+                                                         ''+ value.SummaryContent +
+                                                        '</p>' +
+                                                    '</div>' +  
+                                                        '<div class="o-row c-portfolio-box__readmore _now  fadeInUp">' +
+                                                                            '<a class="read_more">Xem thêm</a>' +
+                                                                        '</div>' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</div>' +
+                                        '<div class="c-empty-space o-hidden-xs c-empty-space--sm"></div>' +
+
+                                        '<div class="c-empty-space c-empty-space--xs o-hidden-lg"></div>'+
+                                    '<hr class="o-hidden-lg homepage-contact__info--label__line" style="width: 100% !important;">' +
+                                    '<div class="c-empty-space c-empty-space--xs o-hidden-lg"></div>';
+                                       rawhtml += html;
+                                    
+                                });
+                                $('#news-Content').html(rawhtml);                                
+                          }
+                        });                       
+
+                          var releatedNewsByCategoryData = response.releatedNewsByCategory;
+                            $.each(releatedNewsByCategoryData, function (key, value) {
+                                var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
+                                var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                                var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block animation-holder c-headings-block--no-padding">'+
+                                    '<div class="c-empty-space c-empty-space--xs"></div>'+
+                                    '<div class="o-container">'+
+                                     '<div class="c-headings-block__icon  ro_1 o-lg-col-5 o-sm-col-12 _now">'+
+                                      '<div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load   ro_1 o-lazy-load--complete _now">'+
+                                       '<figure class="wpb_wrapper vc_figure">'+
+                                        '<div class="vc_single_image-wrapper vc_box_border_grey">'+
+                                         '<img src="' + imageLink + '"' +
+                                          'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"'+
+                                           'alt="Image">'+
+                                             '<noscript>'+
+                                              '<img src="' + imageLink + '"' +
+                                               'class="vc_single_image-img attachment-full"'+
+                                                'alt="Image">'+
+                                                   '</noscript>'+
+                                                    '</div>'+
+                                                '</figure>'+
+                                            '</div>'+
+                                        '</div>'+
+                                        '<div class="c-headings-block__content o-lg-col-7 o-sm-col-12 c-headings-block__content--box">'+
+                                            '<div class=" ro_1 h4 _now c-headings-block__content-title">'+
+                                                ''+ value.Title +
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>';
+                                $('#releated-news-by-category').append(html);
+
+                                var mobileHtml = '  <li onclick="window.open(\'' + link + '\',\'_blank\');" class="c-list-with-icons__item  fadeInUp _now">'+
+                                            '<span class="c-list-with-icons__item__text">'+
+                                              ''+ value.Title +
+                                            '</span>'+
+                                        '</li>';
+                                        $('#mobile-releated-news-by-category').append(mobileHtml);
+                            });
+
+                    var releatedNewsByHashtag = response.releatedNewsByHashtag;
+                            $.each(releatedNewsByHashtag, function (key, value) {
+                                var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
+                                var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                                var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block animation-holder c-headings-block--no-padding">'+
+                                    '<div class="c-empty-space c-empty-space--xs"></div>'+
+                                    '<div class="o-container">'+
+                                     '<div class="c-headings-block__icon  ro_1 o-lg-col-5 o-sm-col-12 _now">'+
+                                      '<div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load   ro_1 o-lazy-load--complete _now">'+
+                                       '<figure class="wpb_wrapper vc_figure">'+
+                                        '<div class="vc_single_image-wrapper vc_box_border_grey">'+
+                                         '<img src="' + imageLink + '"' +
+                                          'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"'+
+                                           'alt="Image">'+
+                                             '<noscript>'+
+                                              '<img src="' + imageLink + '"' +
+                                               'class="vc_single_image-img attachment-full"'+
+                                                'alt="Image">'+
+                                                   '</noscript>'+
+                                                    '</div>'+
+                                                '</figure>'+
+                                            '</div>'+
+                                        '</div>'+
+                                        '<div class="c-headings-block__content o-lg-col-7 o-sm-col-12 c-headings-block__content--box">'+
+                                            '<div class=" ro_1 h4 _now c-headings-block__content-title">'+
+                                                ''+ value.Title +
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>';
+                                $('#releated-news-by-hashtag').append(html);
+                                   var mobileHtml = '  <li onclick="window.open(\'' + link + '\',\'_blank\');" class="c-list-with-icons__item  fadeInUp _now">'+
+                                            '<span class="c-list-with-icons__item__text">'+
+                                              ''+ value.Title +
+                                            '</span>'+
+                                        '</li>';
+                                        $('#mobile-releated-news-by-hashtag').append(mobileHtml);
+                            });
+
+
+
+            });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#nav-news').addClass("active");
+    });
+</script>

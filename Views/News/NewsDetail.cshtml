@@ -1,0 +1,596 @@
+﻿@{
+    Layout = null;    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head itemscope="itemscope" class="head">
+    <meta charset="UTF-8">
+    <meta name="description" content='@ViewBag.SummaryContent'>
+    <title>@ViewBag.Title</title>
+    <meta property="og:title" content='@ViewBag.Title'>    
+    <meta property="og:url" content='@ViewBag.Link'>
+    <meta property="og:description" content='@ViewBag.SummaryContent'>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content='@ViewBag.Image'>    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/theme-2.css" rel="stylesheet" />
+    <link href="~/css/vendor.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/contactus.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/grt-youtube-popup.css">
+    <script data-script-category="">
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179752224-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-179752224-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MKGTK5H');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<div id="global-loading" class="loading display-none"></div>
+<body class="c-body c-body--wordpress c-body--ltr c-body--en c-body--en-us c-body--child-theme c-body--multisite c-body--blog-1 c-body--y2021 m10 d11 h05 monday c-body--logged-out c-body--home c-body--singular c-body--singular-page c-body--singular-page-31178 c-body--page-template-default wpb-js-composer js-comp-ver-6.1 vc_responsive"
+      dir="ltr" itemscope="itemscope">
+    <div id="wrap" class="c-site-wrap">
+        <header id="header" role="banner" itemscope="itemscope"
+                class="c-site-header o-row o-row--width-full u-bgnd-header">
+            <div class="o-container max-width-100">
+                <div class="o-col-12">
+                    <div class="o-row">
+                        <div id="branding" class="c-site-branding">
+                            <div id="site-title" itemprop="headline" class="c-site-branding__title u-mb1-2">
+                                <a class="u-ir" href="/" rel="home">Think & Action</a>
+                            </div>
+                        </div>
+                        <nav class="menu menu menu-primary c-nav-primary" role="navigation" id="menu-primary"
+                             aria-label="Primary Menu" itemscope="itemscope">
+                            <ul id="menu-primary-items" class="c-menu-primary o-menu o-menu--horizontal">
+                                <li id="menu-item-23951"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--23951 c-menu-primary__item--page">
+                                    <a id="nav-homepage" href="https://thinkaction.vn/trang-chu">Trang Chủ</a>
+                                </li>
+                                <li id="menu-item-21689"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--21689 c-menu-primary__item--page c-menu-primary__item--projects">
+                                    <a id="nav-about-us" href="https://thinkaction.vn/ve-chung-toi">Về Chúng Tôi</a>
+                                </li>
+                                <li id="menu-item-28397"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--28397 c-menu-primary__item--page">
+                                    <a id="nav-services" class="service-dropdown" href="https://thinkaction.vn/dich-vu">Dịch Vụ</a>
+                                    <ul class="service-dropdown-content">
+                                        <li><a href="https://thinkaction.vn/thiet-ke-thuong-hieu">Thiết Kế Thương Hiệu</a></li>
+                                        <li><a href="https://thinkaction.vn/tvc">Sản Xuất TVC</a></li>
+                                        <li><a href="https://thinkaction.vn/digital-marketing">Digital Marketing</a></li>
+                                        <li><a href="https://thinkaction.vn/web-mobile-app">Website & Mobile App</a></li>
+                                        <li><a href="https://thinkaction.vn/to-chuc-su-kien">Tổ Chức Sự Kiện</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-21688"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--21688 c-menu-primary__item--page">
+                                    <a id="nav-projects" href="https://thinkaction.vn/du-an">Dự Án</a>
+                                </li>
+                                <li id="menu-item-21774"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--21774 c-menu-primary__item--page c-menu-primary__item--filtered-resources">
+                                    <a id="nav-news" href="https://thinkaction.vn/tin-tuc">Tin Tức</a>
+                                </li>
+                                <li id="menu-item-21774"
+                                    class="o-menu__item--horizontal c-menu-primary__item c-menu-primary__item--21774 c-menu-primary__item--page c-menu-primary__item--filtered-resources">
+                                    <a id="nav-contact" href="https://thinkaction.vn/lien-he">Liên Hệ</a>
+                                </li>
+                            </ul>
+                            <a href="#0" class="c-overlay-nav__trigger js-overlay-nav__trigger">
+                                Menu <span class="c-overlay-nav__icon"></span>
+                            </a>
+                            <div class="c-overlay-nav js-overlay-nav">
+                                <span class="c-overlay-nav__layer js-overlay-nav__layer"></span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content" class="c-site-content">
+            <main id="main" role="main" itemprop="mainContentOfPage" class="c-main homepage-news">
+                <div class="o-vc-layout">
+                    <section class="o-section o-row animated-section o-row--width-full s-color-scheme">
+                        <img class="o-hidden-xs o-hidden-md o-hidden-sm background-design" src="~/images/background-design.png" />
+                        <img class="o-hidden-lg background-design-mobile" src="~/images/background-design-mobile.png" />
+                        <div class="o-row o-row--width-normal s-color-scheme">
+                            <div class="o-container o-container--width-normal o-container--width-same">
+                                <div class="o-sm-col-12 o-lg-col-8 o-md-col-12 o-xs-col-12">
+                                    <div class="c-empty-space c-empty-space--md"></div>
+                                    <div class="c-headings-block animation-holder c-headings-block--no-padding">
+                                        <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+                                        <div class="o-container">
+                                            <div id="new-details-title" class="wpb_animate_when_almost_visible ro_1 h4 wpb_animate_when_almost_visible_now c-headings-block__content-title__detail">
+                                                @*tieu de*@
+                                            </div>
+                                        </div>
+                                        @*<div class="c-empty-space c-empty-space--xs"></div>*@
+                                        <div class="o-container">
+                                            <div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load  wpb_animate_when_almost_visible ro_1 o-lazy-load--complete wpb_animate_when_almost_visible_now">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="c-empty-space c-empty-space--xs"></div>
+                                                    <div id="new-details-image" class="vc_single_image-wrapper vc_box_border_grey">
+                                                        @*<div class="c-empty-space c-empty-space--xs"></div>*@
+                                                    </div>
+                                                    @*<div class="c-empty-space c-empty-space--xs"></div>*@
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        @*<div class="c-empty-space c-empty-space--xs"></div>*@
+                                        <div class="c-empty-space c-empty-space--xs"></div>
+                                        <div class="o-container">
+                                            <div id="new-details-content" class="c-headings-block__sub wpb_animate_when_almost_visible ro_3 c-headings-block__sub--gray wpb_animate_when_almost_visible_now">
+                                            </div>
+                                            <div id="news-tags" class="c-headings-block__sub wpb_animate_when_almost_visible ro_3 c-headings-block__sub--gray wpb_animate_when_almost_visible_now">
+                                                <p>
+                                                    Tags
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-empty-space c-empty-space--lg"></div>
+                                    <div class="o-row o-container">
+                                        <div class="o-sm-col-12 o-hidden-lg o-hidden-xs">
+                                            <div class="c-empty-space c-empty-space--xs"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wpb_animate_when_almost_visible ro_2 o-sm-col-12 o-lg-col-3 o-md-col-12 o-hidden-xs wpb_animate_when_almost_visible_now">
+                                    <div class="c-empty-space c-empty-space--lg"></div>
+                                    <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+                                    <div class="c-vc-column-text">
+                                        <div class=" s-cms-content  fadeInUp">
+                                            <h4 class="c-headings-block__special">Bài viết cùng chuyên mục</h4>
+                                        </div>
+                                    </div>
+                                    <div id="releated-news-by-category">
+                                    </div>
+
+                                    <div class="c-empty-space c-empty-space--sm"></div>
+                                    <div class="c-vc-column-text">
+                                        <div class=" s-cms-content  fadeInUp">
+                                            <h4 class="c-headings-block__special">Có thể bạn quan tâm</h4>
+                                        </div>
+                                    </div>
+                                    <div id="releated-news-by-hashtag">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-row o-row--width-normal s-color-scheme">
+                            <div class="o-container o-container--width-normal o-container--width-same">
+                                <div class="o-sm-col-12 o-hidden-lg o-hidden-md o-hidden-sm">
+                                    <div class="c-empty-space c-empty-space--xs"></div>
+                                    <div class="c-section-accordion c-section-accordion__single">
+                                        <h3 class="c-section-accordion__heading h6 wpb_animate_when_almost_visible fadeInUp wpb_animate_when_almost_visible_now"
+                                            style="">
+                                            Bài viết cùng chuyên mục
+                                        </h3>
+                                        <div class="c-section-accordion__content">
+                                            <ul id="mobile-releated-news-by-category" class="c-list-with-icons c-list-gray-dots animated-section">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="c-section-accordion c-section-accordion__single">
+                                        <h3 class="c-section-accordion__heading h6 wpb_animate_when_almost_visible fadeInUp wpb_animate_when_almost_visible_now"
+                                            style="">
+                                            Có thể bạn quan tâm
+                                        </h3>
+                                        <div class="c-section-accordion__content">
+                                            <ul id="mobile-releated-news-by-hashtag" class="c-list-with-icons c-list-gray-dots animated-section">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="~/js/jquery.js"></script>
+        <script src="~/js/jquery-migrate.js"></script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                  const urlSearchParams = new URLSearchParams(window.location.search);
+                  const params = Object.fromEntries(urlSearchParams.entries());
+                  var articleId = params.id;
+
+                    var settings = {
+                      "url": "https://cms.thinkaction.vn/homepage-chi-tiet-tin-tuc?articleId=" + articleId,
+                      "method": "GET",
+                      "timeout": 0,
+                    };
+
+                    $.ajax(settings).done(function (response) {
+                        var newsDetail = response.newsDetail;
+                        var newsDetailImageLink = "https://cms.thinkaction.vn/" + newsDetail.Thumbnail;
+                        var imageHtml =  '<img src="' + newsDetailImageLink + '"' +
+                                                             'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"'+
+                                                             'alt="Image">'+
+                                                        '<noscript>'+
+                                                            '<img src="' + newsDetailImageLink + '"' +
+                                                                 'class="vc_single_image-img attachment-full"'+
+                                                                 'alt="Image">'+
+                                                        '</noscript>';
+                        var newsContent = newsDetail.Content.replaceAll('src=\"/uploadFiles/', 'src=\"https://cms.thinkaction.vn/uploadFiles/');
+                        $('#new-details-title').append(newsDetail.Title);
+                        $('#new-details-image').append(imageHtml);
+                        $('#new-details-content').append(newsContent);
+                        $('#new-details-content span').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/font-family[^;]+;?/g, '');
+                        });
+
+                                  $('#new-details-content span').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/font-size[^;]+;?/g, '');
+                        });
+
+                        $('#new-details-content img').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/height[^;]+;?/g, '');
+                        });
+
+                        $('#new-details-content img').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/width[^;]+;?/g, '');
+                        });
+
+                         if ($(window).width() < 767) {
+                             $('#new-details-content iframe').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/height[^;]+;?/g, '');
+                        });
+
+                        $('#new-details-content iframe').attr('style', function(i, style)
+                        {
+                            return style && style.replace(/width[^;]+;?/g, '');
+                        });
+                         }
+
+                                                
+
+                        var hashtags = response.hashtags;
+                                $.each(hashtags, function (key, value) {
+                                    var link = 'https://thinkaction.vn/tin-tuc?tags=' + value;
+                                    var tagHtml = '<span><a href="' + link +'">#' + value+ ' </a></span>';
+                                    $('#news-tags').append(tagHtml);
+                                });
+
+                        var releatedNewsByCategoryData = response.releatedNewsByCategory;
+                                $.each(releatedNewsByCategoryData, function (key, value) {
+                                    var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
+                                    var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                                    var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block animation-holder c-headings-block--no-padding">'+
+                                        '<div class="c-empty-space c-empty-space--xs"></div>'+
+                                        '<div class="o-container">'+
+                                         '<div class="c-headings-block__icon wpb_animate_when_almost_visible ro_1 o-lg-col-5 o-sm-col-12 wpb_animate_when_almost_visible_now">'+
+                                          '<div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load  wpb_animate_when_almost_visible ro_1 o-lazy-load--complete wpb_animate_when_almost_visible_now">'+
+                                           '<figure class="wpb_wrapper vc_figure">'+
+                                            '<div class="vc_single_image-wrapper vc_box_border_grey">'+
+                                             '<img src="' + imageLink + '"' +
+                                              'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"'+
+                                               'alt="Image">'+
+                                                 '<noscript>'+
+                                                  '<img src="' + imageLink + '"' +
+                                                   'class="vc_single_image-img attachment-full"'+
+                                                    'alt="Image">'+
+                                                       '</noscript>'+
+                                                        '</div>'+
+                                                    '</figure>'+
+                                                '</div>'+
+                                            '</div>'+
+                                            '<div class="c-headings-block__content o-lg-col-7 o-sm-col-12 c-headings-block__content--box">'+
+                                                '<div class="wpb_animate_when_almost_visible ro_1 h4 wpb_animate_when_almost_visible_now c-headings-block__content-title">'+
+                                                    ''+ value.Title +
+                                                '</div>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>';
+                                    $('#releated-news-by-category').append(html);
+
+                                    var mobileHtml = '  <li onclick="window.open(\'' + link + '\',\'_blank\');" class="c-list-with-icons__item wpb_animate_when_almost_visible fadeInUp wpb_animate_when_almost_visible_now">'+
+                                                '<span class="c-list-with-icons__item__text">'+
+                                                  ''+ value.Title +
+                                                '</span>'+
+                                            '</li>';
+                                            $('#mobile-releated-news-by-category').append(mobileHtml);
+                                });
+
+                        var releatedNewsByHashtag = response.releatedNewsByHashtag;
+                                $.each(releatedNewsByHashtag, function (key, value) {
+                                    var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
+                                    var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                                    var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="c-headings-block animation-holder c-headings-block--no-padding">'+
+                                        '<div class="c-empty-space c-empty-space--xs"></div>'+
+                                        '<div class="o-container">'+
+                                         '<div class="c-headings-block__icon wpb_animate_when_almost_visible ro_1 o-lg-col-5 o-sm-col-12 wpb_animate_when_almost_visible_now">'+
+                                          '<div class="wpb_single_image wpb_content_element vc_align_left o-lazy-load  wpb_animate_when_almost_visible ro_1 o-lazy-load--complete wpb_animate_when_almost_visible_now">'+
+                                           '<figure class="wpb_wrapper vc_figure">'+
+                                            '<div class="vc_single_image-wrapper vc_box_border_grey">'+
+                                             '<img src="' + imageLink + '"' +
+                                              'class="o-lazy-load o-lazy-load--img vc_single_image-img attachment-full o-lazy-load--complete"'+
+                                               'alt="Image">'+
+                                                 '<noscript>'+
+                                                  '<img src="' + imageLink + '"' +
+                                                   'class="vc_single_image-img attachment-full"'+
+                                                    'alt="Image">'+
+                                                       '</noscript>'+
+                                                        '</div>'+
+                                                    '</figure>'+
+                                                '</div>'+
+                                            '</div>'+
+                                            '<div class="c-headings-block__content o-lg-col-7 o-sm-col-12 c-headings-block__content--box">'+
+                                                '<div class="wpb_animate_when_almost_visible ro_1 h4 wpb_animate_when_almost_visible_now c-headings-block__content-title">'+
+                                                    ''+ value.Title +
+                                                '</div>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>';
+                                    $('#releated-news-by-hashtag').append(html);
+
+                                       var mobileHtml = '  <li onclick="window.open(\'' + link + '\',\'_blank\');" class="c-list-with-icons__item wpb_animate_when_almost_visible fadeInUp wpb_animate_when_almost_visible_now">'+
+                                                '<span class="c-list-with-icons__item__text">'+
+                                                  ''+ value.Title +
+                                                '</span>'+
+                                            '</li>';
+                                            $('#mobile-releated-news-by-hashtag').append(mobileHtml);
+                                });
+
+
+                            });
+                });
+        </script>
+        <script src="~/js/jquery.js"></script>
+        <script src="~/js/jquery-migrate.js"></script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $('#nav-news').addClass("active");
+            });
+        </script>
+        <footer id="footer" role="contentinfo" itemscope="itemscope" class="c-site-footer o-row o-row--width-full">
+            <div class="o-container">
+                <hr class="o-hidden-lg homepage-contact__info--label__line" style="width: 100% !important;">
+                <div class="c-site-footer__menu o-col-12">
+                    <div class="o-row">
+                        <div class="menu-footer-container">
+                            <nav class="menu menu menu-footer c-nav-footer" role="navigation" id="menu-footer"
+                                 aria-label="Footer Menu" itemscope="itemscope">
+                                <ul id="menu-footer-items" class="c-menu-footer o-menu o-menu--accordion">
+                                    <li id="menu-item-23968"
+                                        class="o-menu__item--accordion js-accordion c-menu-footer__item c-menu-footer__item--23968 c-menu-footer__item--page c-menu-footer__item--has-children">
+                                        <div id="branding" class="c-site-branding">
+                                            <div id="site-title" itemprop="headline"
+                                                 class="c-site-branding__title u-mb1-2">
+                                                <a class="u-ir" href="" rel="home">Think & Action</a>
+                                            </div>
+                                        </div>
+                                        <ul class="sub-menu">
+                                            <li class="c-menu-footer__item c-menu-footer__item--33552 c-menu-footer__item--page c-menu-footer__item__address o-hidden-xs c-menu-footer__item__address">
+                                                <a id="CONTACT_ADDRESS_PC" class="google-maps-link" style="z-index: 999;">
+                                                    102 Nguỵ Như Kon Tum Thanh Xuân, Hà Nội
+                                                </a>
+                                            </li>
+                                            <li class="o-hidden-lg o-hidden-sm o-hidden-md c-menu-footer__item c-menu-footer__item--33552 c-menu-footer__item--page c-menu-footer__item__address c-menu-footer__item__address-2-row">
+                                                <a id="CONTACT_ADDRESS_MOBILE" class="google-maps-link" style="z-index: 999;">
+                                                    102 Nguỵ Như Kon Tum <br /> Thanh Xuân, Hà Nội
+                                                </a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page c-menu-footer__item__phone">
+                                                <a id="CONTACT_HOTLINE_PC" style="z-index: 999;" href="tel:0896426888">0896.426.888</a>
+                                            </li>
+                                            <li class="c-menu-footer__item c-menu-footer__item--page c-menu-footer__item__web">
+                                                <a id="CONTACT_WEBSITE_NAME_PC" style="z-index: 999;" href="https://thinkaction.vn">thinkaction.vn</a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page c-menu-footer__item__email">
+                                                <a id="CONTACT_EMAIL_PC" style="z-index: 999;" href="mailto:info@thinkaction.vn">info@thinkaction.vn</a>
+                                            </li>
+                                            <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right-menu-footer-container">
+                            <nav class="menu menu menu-footer c-nav-footer" role="navigation" id="menu-footer"
+                                 aria-label="Footer Menu" itemscope="itemscope">
+                                <ul id="menu-footer-items" class="c-menu-footer o-menu o-menu--accordion">
+                                    <li id="menu-item-23968"
+                                        class="o-menu__item--accordion js-accordion c-menu-footer__item c-menu-footer__item--23968 c-menu-footer__item--page c-menu-footer__item--has-children">
+                                        <ul class="sub-menu">
+                                            <div class="c-empty-space c-empty-space--lg o-hidden-lg"></div>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a class="" href="" style="font-weight: 700;margin-bottom: 1rem;">
+                                                    Dịch vụ
+                                                </a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a href="https://thinkaction.vn/thiet-ke-thuong-hieu">Thiết Kế Thương Hiệu</a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a href="https://thinkaction.vn/tvc">Sản Xuất TVC</a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a href="https://thinkaction.vn/digital-marketing">Digital Marketing</a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a href="https://thinkaction.vn/web-mobile-app">Website & Mobile App</a>
+                                            </li>
+                                            <li class="c-menu-footer__item  c-menu-footer__item--page">
+                                                <a href="https://thinkaction.vn/to-chuc-su-kien">Tổ Chức Sự Kiện</a>
+                                            </li>
+                                            <div class="c-empty-space c-empty-space--md o-hidden-xs"></div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="contact-wrapper">
+                            <nav class="menu menu menu-contact-us-footer c-nav-contact-us-footer" role="navigation"
+                                 id="menu-contact-us-footer" aria-label="Contact Us (footer) Menu" itemscope="itemscope">
+                                <ul id="menu-contact-us-items-footer" class="c-menu-contact-us-footer">
+                                    <li id="menu-item-33552"
+                                        class="c-menu-footer__item c-menu-footer__item--33552 c-menu-footer__item--page">
+                                        <a href="">Đăng ký tư vấn chiến lược marketing ngay</a>
+                                    </li>
+                                    <li id="menu-item-21764"
+                                        class="c-menu-contact-us-footer__item c-menu-contact-us-footer__item--21764 c-menu-contact-us-footer__item--page">
+                                        <input placeholder="Email..." type="text" class="homepage-registration-input">
+                                        <a href="" class="homepage-registration-button c-btn">Đăng ký</a>
+                                        <div class="c-empty-space c-empty-space--sm o-hidden-lg o-hidden-sm o-hidden-md"></div>
+                                    </li>
+                                </ul>
+                                <div class="homepage-footer-contact__link--box">
+                                    <div onclick="contactClickFunction('behance')" class="homepage-contact__link" style="background: url('../images/footer/behance.png')"></div>
+                                    <div onclick="contactClickFunction('zalo')" class="homepage-contact__link" style="background: url('../images/footer/zalo.png')"></div>
+                                    <div onclick="contactClickFunction('facebook')" class="homepage-contact__link" style="background: url('../images/footer/facebook.png')"></div>
+                                    <div onclick="contactClickFunction('youtube')" class="homepage-contact__link" style="background: url('../images/footer/youtube.png')"></div>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="arcontactus"></div>
+    <script src="~/js/site.js"></script>
+    <script src="~/js/modernizr.js"></script>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/jquery-migrate.js"></script>
+    <script id="mm-base-vendor-js" type='text/javascript' defer="" src='~/js/vendor.js'></script>
+    <script id="mm-base-theme-js" type='text/javascript' defer="" src='~/js/theme.js'></script>
+    <script id="wpb_composer_front_js-js" type='text/javascript' defer="" src='~/js/js_composer_front.js'></script>
+    <script src="~/js/contactus.js"></script>
+    <script src="~/js/contactus_scripts.js"></script>
+    <script src="~/js/contact.js"></script>
+    <script type="text/javascript">
+                jQuery(function ($) {
+
+                    
+            $(document).ajaxStart(function() {                
+                $( "#global-loading" ).removeClass('display-none');
+            });
+
+            $(document).ajaxComplete(function() {                
+                $( "#global-loading" ).addClass('display-none');
+            });
+
+            $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".c-site-header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $(".c-site-header").removeClass("active");
+            }
+        });
+                });
+    </script>
+    <script>
+        function contactClickFunction(val) {
+            jQuery(function ($) {
+                var settings = {
+                  "url": "https://cms.thinkaction.vn/all-options",
+                  "method": "GET",
+                  "timeout": 0,
+                };
+
+                $.ajax(settings).done(function (response) {
+                    var data = response.data;
+                    if(val === "linkedin") {
+                        window.open(data.find(x => x.Code === 'CONTACT_LINKEDIN_LINK').ValuePC);
+                    }
+                    if(val === "facebook") {
+                        window.open(data.find(x => x.Code === 'CONTACT_FACEBOOK_LINK').ValuePC);
+                    }
+                    if(val === "zalo") {
+                        window.open(data.find(x => x.Code === 'CONTACT_ZALO_LINK').ValuePC);
+                    }
+                    if(val === "youtube") {
+                        window.open(data.find(x => x.Code === 'CONTACT_YOUTUBE_LINK').ValuePC);
+                    }
+                    if(val === "behance") {
+                        window.open(data.find(x => x.Code === 'CONTACT_BEHANCE_LINK').ValuePC);
+                    }
+                });
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            var settings = {
+                  "url": "https://cms.thinkaction.vn/all-options",
+                  "method": "GET",
+                  "timeout": 0,
+                };
+
+                $.ajax(settings).done(function (response) {
+                    var data = response.data;
+                    $(".google-maps-link").attr("href", data.find(x => x.Code === 'CONTACT_ADDRESS_MAP').ValuePC);
+
+                        $('#CONTACT_ADDRESS_PC').html(data.find(x => x.Code === 'CONTACT_ADDRESS').ValuePC.replace(/\n/g,'<br/>'));
+                        $('#CONTACT_ADDRESS_MOBILE').html(data.find(x => x.Code === 'CONTACT_ADDRESS').ValueMobile.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_HOTLINE_PC').html(data.find(x => x.Code === 'CONTACT_HOTLINE').ValuePC.replace(/\n/g,'<br/>'));
+                                        $('#CONTACT_HOTLINE_PC').attr("href",'tel:' + data.find(x => x.Code === 'CONTACT_HOTLINE').ValuePC);
+                        $('#CONTACT_HOTLINE_MOBILE').html(data.find(x => x.Code === 'CONTACT_HOTLINE').ValueMobile.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_ZALO_NAME_PC').html(data.find(x => x.Code === 'CONTACT_ZALO_NAME').ValuePC.replace(/\n/g,'<br/>'));
+                        $('#CONTACT_ZALO_NAME_MOBILE').html(data.find(x => x.Code === 'CONTACT_ZALO_NAME').ValueMobile.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_FACEBOOK_NAME_PC').html(data.find(x => x.Code === 'CONTACT_FACEBOOK_NAME').ValuePC.replace(/\n/g,'<br/>'));
+                        $('#CONTACT_FACEBOOK_NAME_MOBILE').html(data.find(x => x.Code === 'CONTACT_FACEBOOK_NAME').ValueMobile.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_EMAIL_PC').html(data.find(x => x.Code === 'CONTACT_EMAIL').ValuePC.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_EMAIL_PC').attr("href",'mailto:' + data.find(x => x.Code === 'CONTACT_EMAIL').ValuePC);
+                        $('#CONTACT_EMAIL_MOBILE').html(data.find(x => x.Code === 'CONTACT_EMAIL').ValueMobile.replace(/\n/g,'<br/>'));
+
+                                        $('#CONTACT_WEBSITE_NAME_PC').html(data.find(x => x.Code === 'CONTACT_WEBSITE_NAME').ValuePC.replace(/\n/g,'<br/>'));
+                                        $('#CONTACT_WEBSITE_NAME_PC').attr("href", data.find(x => x.Code === 'CONTACT_WEBSITE_LINK').ValuePC);
+                        $('#CONTACT_WEBSITE_NAME_MOBILE').html(data.find(x => x.Code === 'CONTACT_WEBSITE_NAME').ValueMobile.replace(/\n/g,'<br/>'));
+                });
+        });
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKGTK5H"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

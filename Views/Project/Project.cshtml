@@ -1,0 +1,252 @@
+﻿<title>T&A - Dự Án</title>
+<div id="content" class="c-site-content">
+    <main id="main" role="main" itemprop="mainContentOfPage" class="c-main homepage-project">
+        <div class="o-vc-layout">
+            <section id="agile-development" class="o-section o-row o-row--width-full s-color-scheme">
+                <img class="o-hidden-xs o-hidden-md o-hidden-sm background-design" src="~/images/background-design.png" />
+                <img class="o-hidden-lg background-design-mobile" src="~/images/background-design-mobile.png" />
+                <div class="o-row o-row--width-normal s-color-scheme">
+                    <div class="o-container o-container--width-normal o-container--width-same">
+                        <div class="animated-section o-sm-col-12 o-lg-col-12 o-xs-col-12">
+                            <div class="c-empty-space c-empty-space--lg o-hidden-xs"></div>
+                            <div class="c-vc-column-text u-text-center">
+                                <h1 class="h1 text_block_heading ro_1 wpb_animate_when_almost_visible fadeInUp wpb_animate_when_almost_visible_now">
+                                    Dự án tiêu biểu
+                                </h1>
+                            </div>
+                            <div class="c-empty-space c-empty-space--xs"></div>
+                            <div class="c-archive-header__menu u-cf">
+                                <div class="c-empty-space c-empty-space--xsz"></div>
+                                <div class="c-archive-header__menu filter_holder u-cf">
+                                    <div class="c-filter-nav u-of-visible u-cf">
+                                        <form class="c-filter-nav__form js-filter-form u-mb0">
+                                            <div class="project-tab c-filter-nav__item">
+                                                <a class="1">Thiết Kế Thương Hiệu</a>
+                                            </div>
+                                            <div class="project-tab c-filter-nav__item">
+                                                <a class="2">Sản Xuất TVC</a>
+                                            </div>
+                                            <div class="project-tab c-filter-nav__item">
+                                                <a class="3">Digital Marketing</a>
+                                            </div>
+                                            <div class="project-tab c-filter-nav__item">
+                                                <a class="4">Web & Mobile App</a>
+                                            </div>
+                                            <div class="project-tab c-filter-nav__item">
+                                                <a class="5">Tổ Chức Sự Kiện</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Design" class="c-mm-vc-posts">
+                                <div class="o-container o-container--width-normal">
+                                    <div id="projects" class="c-archive c-archive__services js-inf-scroll-container c-archive--centered">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="pagination-container"></div>
+                            <div class="c-empty-space c-empty-space--xs"></div>
+                            <div class="c-vc-column-text u-text-center">
+                            @*    <h5 class="h5 text_block_heading fadeInUp highlight-projects wpb_animate_when_almost_visible ro_3">
+                                    Bạn muốn tham khảo thêm thiết kế trong lĩnh vực thiết kế của bạn?
+                                </h5>*@
+                                <div class="c-headings-block__learn-more mt-20 c-headings-block__learn-more-button wpb_animate_when_almost_visible ro_4">
+                                    <a class="zalo-link">TƯ VẤN NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="c-empty-space c-empty-space--md"></div>
+        </div>
+    </main>
+</div>
+<script src="~/js/jquery.js"></script>
+<script src="~/js/jquery-migrate.js"></script>
+<script src="~/js/grt-youtube-popup.js"></script>
+<script src="~/js/pagination.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    function videoClickFunction(val) {
+        jQuery(function ($) {
+            //debugger;
+                    var id = '#' + val;
+                    var oldHeight = $(id).height();
+                    var oldWidth = $(id).width();
+                      var iframe = document.createElement("iframe");
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("width", oldWidth);
+                    iframe.setAttribute("height", oldHeight);
+                    iframe.setAttribute("allow", "autoplay");
+                    iframe.setAttribute("src", "https://www.youtube.com/embed/" + $(id).attr("data-embed") + "?enablejsapi=1rel&autoplay=1");
+                    $(id).html(iframe);
+        });
+    }
+</script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('.1').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                loadData();
+            } else {
+                $('.project-tab a.active').removeClass('active');
+                $(this).addClass('active');
+                loadData(1);
+            }
+        });
+
+        $('.2').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            loadData();
+            } else {
+                $('.project-tab a.active').removeClass('active');
+                $(this).addClass('active');
+             loadData(2);
+            }
+        });
+
+        $('.3').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+               loadData();
+            } else {
+                $('.project-tab a.active').removeClass('active');
+                $(this).addClass('active');
+               loadData(3);
+            }
+        });
+
+        $('.4').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+               loadData();
+            } else {
+                $('.project-tab a.active').removeClass('active');
+                $(this).addClass('active');
+               loadData(4);
+            }
+        });
+
+        $('.5').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+          loadData();
+            } else {
+                $('.project-tab a.active').removeClass('active');
+                $(this).addClass('active');
+              loadData(5);
+            }
+        });
+
+        var productCategoryId = '';
+        function loadData(val) {
+         var settings = {
+            "url": "https://cms.thinkaction.vn/homepage-project",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        productCategoryId = val;        
+        $.ajax(settings).done(function(response) {            
+            var data = response.data;
+            // lọc
+            if(productCategoryId !== undefined)
+            {
+                data = $.grep(data, function(v) {
+                    return v.ProductCategoryId === val;
+                });                
+            }            
+
+            $('#pagination-container').pagination({
+                dataSource: data,
+                pageSize: 9,
+                callback: function(data, pagination) {
+                    var rawhtml = '';
+                    $.each(data, function(key, value) {
+                        if (value.ProductCategoryId === 2) {
+
+                            var link = "https://thinkaction.vn/chi-tiet-du-an?slug=" + value.Slug + "&id=" + value.ProductId;
+                            var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                            var classId = "item-" + value.ProductCategoryId;
+                            var youtubeId = value.Description;
+                            var html = '<div id=' + value.ProductId + ' youtubeid="' + youtubeId + '" data-embed="' + youtubeId + '" style="cursor: pointer;"  class="youtube c-archive__col c-archive__col--rounded o-xs-col-12 o-sm-col-6 o-md-col-6 o-lg-col-4 js-inf-scroll-item youtube-link ' + classId + '">' +
+                                '<article class="c-entry  c-entry--tile c-entry--type-tile c-entry--status-publish c-entry--has-post-thumbnail c-entry--hentry u-text-left u-bgnd-base has-no-permalink has-header-image has-light-header-text s-color-scheme has-dark-header-bgnd"' +
+                                'itemscope="itemscope" itemtype="https://schema.org/CreativeWork">' +
+                                '<div class="c-entry-header">' +
+                                '<div style="" class="c-entry-header__image">' +
+                                '<img src="' + imageLink + '" alt="" class="o-lazy-load o-lazy-load--img landscape cw-lesser featured full c-entry-header__img o-lazy-load--complete">' +
+                                '<noscript>' +
+                                '<img src="' + imageLink + '"' +
+                                'class="landscape cw-lesser featured full c-entry-header__img">' +
+                                '</noscript>' +
+                                '</div>' +
+                                '<div class="c-tag c-entry-header__label u-z1">' +
+                                '</div>' +
+                                '</div>' +
+                                '<div class="c-entry__content">' +
+                                '<div class="c-entry__summary entry-summary s-cms-content"' +
+                                'itemprop="description">' +
+                                '<a href="" target="_blank" class="o-link-color-on-hover"' +
+                                'rel="noopener noreferrer">' + value.Name + '</a>' +
+                                '</div>' +
+                                '</div>' +
+                                '<div class="c-entry__anchor" id=""></div>' +
+                                '</article>' +
+                                '</div>';
+                            rawhtml += html;
+                        }
+                        //tvc
+                        else {
+                            var link = "https://thinkaction.vn/chi-tiet-du-an?slug=" + value.Slug + "&id=" + value.ProductId;
+                            var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
+                            var classId = "item-" + value.ProductCategoryId;
+                            var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;"  class="c-archive__col c-archive__col--rounded o-xs-col-12 o-sm-col-6 o-md-col-6 o-lg-col-4 js-inf-scroll-item ' + classId + '">' +
+                                '<article class="c-entry  c-entry--tile c-entry--type-tile c-entry--status-publish c-entry--has-post-thumbnail c-entry--hentry u-text-left u-bgnd-base has-no-permalink has-header-image has-light-header-text s-color-scheme has-dark-header-bgnd"' +
+                                'itemscope="itemscope" itemtype="https://schema.org/CreativeWork">' +
+                                '<div class="c-entry-header">' +
+                                '<div style="" class="c-entry-header__image">' +
+                                '<img src="' + imageLink + '" alt="" class="o-lazy-load o-lazy-load--img landscape cw-lesser featured full c-entry-header__img o-lazy-load--complete">' +
+                                '<noscript>' +
+                                '<img src="' + imageLink + '"' +
+                                'class="landscape cw-lesser featured full c-entry-header__img">' +
+                                '</noscript>' +
+                                '</div>' +
+                                '<div class="c-tag c-entry-header__label u-z1">' +
+                                '</div>' +
+                                '</div>' +
+                                '<div class="c-entry__content">' +
+                                '<div class="c-entry__summary entry-summary s-cms-content"' +
+                                'itemprop="description">' +
+                                '<a href="' + link + '" target="_blank" class="o-link-color-on-hover"' +
+                                'rel="noopener noreferrer">' + value.Name + '</a>' +
+                                '</div>' +
+                                '</div>' +
+                                '<div class="c-entry__anchor" id=""></div>' +
+                                '</article>' +
+                                '</div>';
+                            rawhtml += html;
+                        }
+
+
+                    });
+                    $('#projects').html(rawhtml);
+                    $(".youtube-link").grtyoutube(); 
+                    //}
+                }
+            });
+        });
+        }              
+
+        loadData();
+    });
+</script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#nav-projects').addClass("active");
+    });
+</script>
