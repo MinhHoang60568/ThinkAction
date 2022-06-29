@@ -364,8 +364,16 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     margin-top: 0 !important;
 }
 
+.mt-10 {
+    margin-top: 1rem !important;
+}
+
 .mt-20 {
     margin-top: 2rem !important;
+}
+
+.mt-30 {
+    margin-top: 3rem !important;
 }
 
 .mt-40 {
@@ -644,4 +652,40 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
 .mt-5 {
     margin-top: 5px !important;
+}
+
+.background-brand {
+    position: absolute;
+    top: -20rem;
+    right: -9rem;
+    max-width: 1300px;
+    width: calc(70% + 150px);
+    transform: rotateZ(3deg);
+}
+
+.brand-image img {
+    width: 86%;
+    transform: translateX(1rem) translateY(-1rem);
+}
+
+.brand .homepage-slogan {
+    font-size: 2rem !important
+}
+
+@media (min-width: 1200px) {
+    div.brand .homepage-slogan-box p, div.brand .homepage-slogan-box a, div.brand .homepage-slogan-box h1, div.brand .homepage-slogan-box h3 {
+        color: black !important;
+        font-weight: 300;
+    }
+
+    .homepage-slogan-box {
+        transform: translateX(-5%) translateY(25%) !important;
+    }
+}
+@media (min-width: 1920px) {
+
+    div.brand .o-container,
+    div.brand .o-row {
+        max-width: 100%;
+    }
 }
