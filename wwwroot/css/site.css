@@ -379,6 +379,15 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .mt-40 {
     margin-top: 4rem !important;
 }
+.mt-60 {
+    margin-top: 6rem !important;
+}
+.mt-80 {
+    margin-top: 8rem !important;
+}
+.mt-100 {
+    margin-top: 10rem !important;
+}
 
 @media (max-width: 767px) {
     .mt-40 {
@@ -654,22 +663,78 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     margin-top: 5px !important;
 }
 
-.background-brand {
+.brand .background-brand {
     position: absolute;
-    top: -20rem;
-    right: -9rem;
-    max-width: 1300px;
+    top: -25rem;
+    right: 0rem;
+    max-width: 1180px;
     width: calc(70% + 150px);
-    transform: rotateZ(3deg);
+}
+    .brand .background-brand img {
+        animation: forwards .6s example;
+    }
+
+.brand .brand-image {
+    padding-right: 35%;
+    padding-left: 7%;
+    height: 660px;
 }
 
-.brand-image img {
-    width: 86%;
-    transform: translateX(1rem) translateY(-1rem);
+.brand-image img.img-brand {
+    animation: fly 3s infinite;
+    animation-delay:0.25s;
+}
+.brand-image img.img-shadow {
+    animation: shadowfly 3s infinite;
+    animation-delay: 0.25s;
 }
 
 .brand .homepage-slogan {
     font-size: 2rem !important
+}
+.brand .identity {
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #eb5822;
+    padding: 5px 15px;
+    border-radius: 19px;
+}
+    .brand .identity .animated-icon {
+        margin-left: 0 !important;
+        margin-right: 20px !important;
+    }
+    .brand .identity .identified-text {
+
+    }
+.brand .bbeb5822 {
+    border-bottom: 1px solid #eb5822;
+}
+
+.brand .identified-brand #design-services-box {
+    display: flex;
+    padding-top: 7px;
+}
+
+.brand .identified-brand .identified-brand-border-bottom {
+    width: 80% !important;
+    padding-top: 1.5rem !important;
+    border-bottom: 1px solid #eb5822 !important;
+}
+
+.brand .c-headings-block__learn-more-button a {
+    border: 1px solid #fff;
+    padding: 1.5rem 6rem;
+    border-radius: 10px;
+    background: linear-gradient(99.29deg, #F15822 -2.58%, #F5AA1C 128.21%);
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+.brand .identified-brand .animation-holder .service-icon__holder .animated-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 3rem;
 }
 
 @media (min-width: 1200px) {
@@ -687,5 +752,442 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     div.brand .o-container,
     div.brand .o-row {
         max-width: 100%;
+    }
+}
+
+@-webkit-keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes shadowfly {
+    0% {
+        width: 80%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.glass-layout {
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    left: -120px;
+    top: -50px;
+    transform: rotate(25deg);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .4) 0%, white 50%, rgba(255, 255, 255, .4) 100%);
+    background-size: cover;
+    transition: .6s;
+}
+
+.brand .zalo-link{
+    overflow: hidden;
+}
+.brand .zalo-link:hover .glass-layout{
+    left: 250px;
+}
+.brand .design-logo .design-logo-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #231F20;
+    opacity: 0.8;
+}
+.brand .design-logo .design-logo-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 7.5% 5.5%;
+}
+.brand .design-logo .design-logo-detail > div {
+    text-align:center;
+}
+.brand .design-logo .design-logo-detail > div:nth-child(2) {
+    display:flex;
+}
+    .brand .design-logo .design-logo-detail .design-logo-contact-now {
+        padding: 20px 25px;
+        font-size: 35px;
+        color: #E9A541;
+        font-weight: 700;
+        border: solid 2px;
+        border-radius: 19px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-contact-now:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product {
+        width: 25%;
+        height: 100px;
+    }
+        .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-count {
+            font-size: 45px;
+            color: #E9A541;
+            font-weight: 600;
+        }
+        .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-text {
+            font-weight: 500;
+            font-size: 25px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+.brand .role-of-logo {
+    display: inline-block !important;
+    padding: 0 10%;
+}
+.brand .role-of-logo .title-role-of-logo {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F15822;
+}
+    .brand .role-of-logo .content-role-of-logo {
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+    }
+.brand .section-reason-of-logo .title-reason-of-logo {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F15822;
+}
+.brand .reason-of-logo {
+    justify-content: space-between;
+    flex-direction: row !important;
+    padding: 0 10%;
+    display: flex;
+}
+    .brand .reason-of-logo .reason-content {
+        background-color: whitesmoke;
+        width: 20%;
+        height: 440px;
+        border-radius: 30px;
+        text-align: center;
+    }
+        .brand .reason-of-logo .reason-content .number-reason-content img {
+            width: 80%;
+            transform: translateY(-20%)
+        }
+        .brand .reason-of-logo .reason-content .number-reason-content {
+            position: relative;
+
+        }
+        .brand .reason-of-logo .reason-content .number {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .brand .reason-of-logo .reason-content .logo-reason-content img{
+            width: 50px;
+        }
+        .brand .reason-of-logo .reason-content .title-logo-reason-content {
+            font-weight: 600;
+            font-size: 20px;
+            color: #F15822;
+            height: 70px;
+            padding: 0 6%;
+        }
+        .brand .reason-of-logo .reason-content .detail-reason-content {
+            padding: 0 10%;
+            font-weight: 400;
+            font-size: 20px;
+            color: #231F20;
+        }
+.shadow-bow {
+    box-shadow: rgba(169, 169, 169,  0.5) 5px 6px, rgba(169, 169, 169,  0.5) 6px 7px,rgba(169, 169, 169,  0.5) 7px 8px,rgba(169, 169, 169,  0.5) 8px 9px,rgba(169, 169, 169,  0.5) 9px 10px,
+                rgba(169, 169, 169,  0.45) 10px 11px, rgba(169, 169, 169,  0.45) 11px 12px, rgba(169, 169, 169,  0.45) 12px 13px, rgba(169, 169, 169,  0.45) 13px 14px, rgba(169, 169, 169,  0.45) 14px 15px, 
+                rgba(169, 169, 169,  0.4) 20px 21px, rgba(169, 169, 169,  0.4) 21px 22px, rgba(169, 169, 169,  0.4) 22px 23px, rgba(169, 169, 169,  0.4) 23px 24px, rgba(169, 169, 169,  0.4) 24px 25px, 
+                rgba(169, 169, 169,  0.35) 20px 21px, rgba(169, 169, 169,  0.35) 21px 22px, rgba(169, 169, 169,  0.35) 22px 23px, rgba(169, 169, 169,  0.35) 23px 24px, rgba(169, 169, 169,  0.35) 24px 25px, 
+                rgba(169, 169, 169,  0.3) 25px 26px, rgba(169, 169, 169,  0.3) 26px 27px, rgba(169, 169, 169,  0.3) 27px 28px, rgba(169, 169, 169,  0.3) 28px 29px, rgba(169, 169, 169,  0.3) 29px 30px, 
+                rgba(169, 169, 169,  0.25) 30px 31px, rgba(169, 169, 169,  0.25) 31px 32px, rgba(169, 169, 169,  0.25) 32px 33px, rgba(169, 169, 169,  0.25) 33px 34px, rgba(169, 169, 169,  0.25) 34px 35px, 
+                rgba(169, 169, 169,  0.2) 35px 36px, rgba(169, 169, 169,  0.2) 36px 37px, rgba(169, 169, 169,  0.2) 37px 38px, rgba(169, 169, 169,  0.2) 38px 39px, rgba(169, 169, 169,  0.2) 39px 40px, 
+                rgba(169, 169, 169,  0.15) 40px 41px, rgba(169, 169, 169,  0.15) 41px 42px, rgba(169, 169, 169,  0.15) 42px 43px, rgba(169, 169, 169,  0.15) 43px 44px, rgba(169, 169, 169,  0.15) 44px 45px, 
+                rgba(169, 169, 169,  0.1) 45px 46px, rgba(169, 169, 169,  0.1) 46px 47px, rgba(169, 169, 169,  0.1) 47px 48px, rgba(169, 169, 169,  0.1) 48px 49px, rgba(169, 169, 169,  0.1) 49px 50px,
+                rgba(169, 169, 169,  0.075) 50px 51px, rgba(169, 169, 169,  0.075) 51px 52px, rgba(169, 169, 169,  0.075) 52px 43px, rgba(169, 169, 169,  0.075) 53px 54px, rgba(169, 169, 169,  0.075) 54px 55px, 
+                rgba(169, 169, 169,  0.05) 55px 56px, rgba(169, 169, 169,  0.05) 56px 57px, rgba(169, 169, 169,  0.05) 57px 58px, rgba(169, 169, 169,  0.05) 58px 59px, rgba(169, 169, 169,  0.05) 59px 60px,
+                rgba(169, 169, 169,  0.025) 60px 61px, rgba(169, 169, 169,  0.025) 61px 62px, rgba(169, 169, 169,  0.025) 62px 63px, rgba(169, 169, 169,  0.025) 63px 64px, rgba(169, 169, 169,  0.025) 64px 65px, 
+                rgba(169, 169, 169,  0.01) 65px 66px, rgba(169, 169, 169,  0.01) 66px 67px, rgba(169, 169, 169,  0.01) 67px 68px, rgba(169, 169, 169,  0.01) 68px 69px, rgba(169, 169, 169,  0.01) 69px 70px;
+}
+.brand .section-design-action .design-action {
+    background-image: linear-gradient(to right, #F15822, #F5AA1C);
+    height: 440px;
+    display: block !important;
+}
+    .brand .section-design-action .design-action .title-design-action {
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFF;
+        height: 50px;
+        padding: 5rem;
+    }
+.brand .section-design-action .content-design-action {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 7%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+        .brand .section-design-action .content-design-action .detail-design-action {
+            display: flex;
+            width: 40%;
+        }
+        .brand .section-design-action .content-design-action .detail-design-action img{
+            width: 70px;
+            height: 70px;
+        }
+            .brand .section-design-action .content-design-action .detail-design-action .detail-content-design-action {
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFFFFF;
+                padding-left: 2rem;
+                display: flex;
+                align-items: center;
+            }
+.brand .section-procedure {
+    position: relative;
+    height:auto;
+}
+.brand .section-procedure > img {
+    position: absolute;
+    width: 300px;
+}
+    .brand .section-procedure .procedure {
+        display: block !important;
+    }
+.brand .section-procedure .img-left {
+    left: 0;
+    top: -15rem;
+}
+    .brand .section-procedure .img-right {
+        right: 0;
+        top: 60rem;
+    }
+.brand .section-procedure .procedure .title-procedure {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F15822;
+}
+    .brand .section-procedure .procedure .content-procedure .detail-procedure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .brand .section-procedure .procedure .content-procedure .detail-procedure img {
+            height: 200px;
+            width: 18%;
+        }
+        .brand .section-procedure .procedure .content-procedure .detail-procedure .step-procedure {
+            padding-left: 15px;
+            font-size: 16px;
+            color: #000000;
+            min-width: 250px;
+        }
+            .brand .section-procedure .procedure .content-procedure .detail-procedure .step-procedure p {
+                font-weight: 600;
+            }
+    .brand .section-procedure .procedure .content-procedure .detail-procedure-right .step-procedure {
+        text-align: right !important;
+        padding-right: 15px;
+    }
+    .brand .section-procedure .procedure .content-procedure .detail-procedure-right {
+        margin-left: 85px;
+    }
+    .brand .section-procedure .procedure .content-procedure .detail-procedure-left {
+        margin-right: 85px;
+    }
+.brand .section-commitment .commitment {
+    background-image: linear-gradient(to right, #F15822, #F5AA1C);
+    height: 410px;
+    display: block !important;
+}
+    .brand .section-commitment .commitment .title-commitment {
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFF;
+        height: 50px;
+        padding: 5rem;
+    }
+    .brand .section-commitment .commitment .content-commitment {
+        display: flex;
+        justify-content: center;
+    }
+        .brand .section-commitment .commitment .content-commitment .detail-commitment {
+            text-align: center;
+            width: 20%;
+            padding: 0 4%;
+        }   
+        .brand .section-commitment .commitment .content-commitment .detail-commitment img {
+            width: 100px;
+            height: 100px;
+        }
+            .brand .section-commitment .commitment .content-commitment .detail-commitment .content-detail-commitment {
+                font-weight: 600;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+.brand .homepage-project .h4 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #F15822;
+}
+
+.brand .question {
+    display: inline-block !important;
+    padding: 0 7%;
+    width: 100%;
+}
+
+    .brand .question .block-question {
+        margin-top: 2rem;
+    }
+
+    .brand .question .title-question {
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        font-size: 35px;
+        color: #F15822;
+    }
+
+    .brand .question .content-question {
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+        padding: 0 20%;
+    }
+        .brand .question .content-question .detail-question {
+            border-bottom: 1px solid #000000;
+            font-weight: 500;
+            font-size: 25px;
+            color: #000000;
+            position: relative;
+        }      
+        .brand .question .content-question .detail-question:hover {
+            cursor: pointer;
+        }
+            .brand .question .content-question .detail-question .icon-UpDown {
+                float: right;
+                width: 20px;
+                border-bottom: solid 2px;
+                position:absolute;
+                right: 15px;
+                top: 15px;
+            }
+            .rotate {
+                animation: rotate forwards 1s;
+            }
+        .brand .question .content-question .detail-answer {
+            margin-left: 20px;
+            padding-right: 5%;
+            opacity: .5;
+            margin-top: 2rem;
+        }
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 0;
+    }
+
+    100% {
+        transform: rotate(450deg);
+        transform-origin: center;
+    }
+}
+.textColorOrange {
+    color: #F15822 !important;
+}
+.bbColorOrange {
+    border-bottom: solid 1px #F15822 !important;
+}
+
+.brand .news {
+    padding: 0 10%;
+}
+    .brand .news #news-Content {
+        display: flex;
+        justify-content: space-between;
+    }
+        .brand .news #news-Content .block-new {
+            width: 30%;
+            padding: .75%;
+            border: solid 1px #BABABA;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 12px 23px rgba(0, 0, 0, 0.11);
+            overflow: hidden;
+        }      
+        .brand .news #news-Content .block-new img {
+            width: 100%;
+            height: 400px;
+        }
+            .brand .news #news-Content .block-new:hover img {
+                transform: scale(1.15);
+                transition: 0.5s;
+            }
+            .brand .news #news-Content .block-new:hover .title-new {
+                color: #F15822;
+            }
+            .brand .news #news-Content .block-new .title-new {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #A4A4A4;
+                font-weight: 600;
+                font-size: 20px;
+                color: #000000;
+                min-height: 90px;
+            }
+            .brand .news #news-Content .block-new .content-new {
+                font-weight: 600;
+                font-size: 16px;
+                color: #000000;
+            }
+.brand .news .title-news {
+    text-align: left;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F15822;
+}
+.brand #partners-box, #projects {
+    padding: 0 10%;
+}
+.overLeft1_6rem{
+    margin: 0!important;
+}
+@media (min-width: 1920px) {
+    .brand .o-sm-col-12 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
