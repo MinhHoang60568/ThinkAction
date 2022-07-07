@@ -1484,3 +1484,10 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         justify-content: space-between;
     }
 }
+@media only screen and (max-width: 590px) {
+    .brand .identified-brand .animation-holder .service-icon__holder .animated-icon {
+        width: 20px;
+        height: 25px;
+        margin-left: 1rem;
+    }
+}
