@@ -666,12 +666,13 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     margin-top: 5px !important;
 }
 
-/*----------------------------------------------------------------------------------------------------------*//*BRAND*//*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/ /*BRAND*/ /*----------------------------------------------------------------------------------------------------------*/
 .brand .o-container,
 .brand .o-row {
     width: 100%;
     max-width: none;
 }
+
 .brand .background-brand {
     position: absolute;
     top: -15rem;
@@ -679,20 +680,24 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     max-width: 1180px;
     width: calc(70% + 150px);
 }
-.brand .floatCenter{
+
+.brand .floatCenter {
     justify-content: space-between;
 }
-.brand .floatCenter > div{
-    width: 50%;
-    max-width: 50% !important;
-}
-    .brand .floatCenter > div:nth-child(1) {
-        padding-left: 8.3333333333333%;
+
+    .brand .floatCenter > div {
+        width: 50%;
+        max-width: 50% !important;
     }
+
+        .brand .floatCenter > div:nth-child(1) {
+            padding-left: 8.3333333333333%;
+        }
 
 .brand .brand-image {
     padding-top: 3rem;
 }
+
 .brand .section-col-image-logo-brand .single-image {
     width: 500px;
     margin: auto;
@@ -714,7 +719,6 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
 .brand .identity {
     width: auto;
-    min-width: 260px;
     display: flex;
     align-items: center;
     height: 100%;
@@ -745,7 +749,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
 .brand .c-headings-block__learn-more-button a {
     border: 1px solid #fff;
-    padding: 1.5rem 6rem;
+    /*padding: 1.5rem 6rem;*/
     border-radius: 10px;
     background: linear-gradient(99.29deg, #F15822 -2.58%, #F5AA1C 128.21%);
     color: #ffffff !important;
@@ -852,7 +856,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         color: #E9A541;
         font-weight: 700;
         border: solid 2px;
-        border-radius: 19px;
+        border-radius: 10px;
     }
 
         .brand .design-logo .design-logo-detail .design-logo-contact-now:hover {
@@ -938,7 +942,8 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             left: 0;
             color: #fff;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 26px;
+            ;
         }
 
         .brand .reason-of-logo .reason-content .logo-reason-content img {
@@ -949,8 +954,9 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             font-weight: 600;
             font-size: 20px;
             color: #F15822;
-            height: 70px;
-            padding: 0 6%;
+            min-height: 70px;
+            height: auto;
+            padding: 0 5%;
         }
 
         .brand .reason-of-logo .reason-content .detail-reason-content {
@@ -966,7 +972,8 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
 .brand .section-design-action .design-action {
     background-image: linear-gradient(to right, #F15822, #F5AA1C);
-    height: 440px;
+    height: auto;
+    padding-bottom: 5rem;
     display: block !important;
 }
 
@@ -976,8 +983,8 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         font-weight: 700;
         font-size: 35px;
         color: #FFFF;
-        height: 50px;
-        padding: 5rem;
+        min-height: 50px;
+        padding: 7rem 2rem 0rem 2rem;
     }
 
 .brand .section-design-action .content-design-action {
@@ -1005,7 +1012,6 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             color: #FFFFFF;
             padding-left: 2rem;
             display: flex;
-            align-items: center;
         }
 
 .brand .section-procedure {
@@ -1038,6 +1044,9 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         font-weight: 700;
         font-size: 35px;
         color: #F15822;
+    }
+    .brand .section-procedure .content-procedure {
+        padding: 0 5%;
     }
 
     .brand .section-procedure .procedure .content-procedure .detail-procedure {
@@ -1151,6 +1160,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             font-size: 25px;
             color: #000000;
             position: relative;
+            padding-right: 5rem;
         }
 
             .brand .question .content-question .detail-question:hover {
@@ -1259,8 +1269,218 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     margin: 0 !important;
 }
 
-@media only screen and (min-width: 1200px) {
+.brand .homepage-partner-text {
+    width: fit-content;
+}
+.brand .brand-title {
+    height: auto;
 }
 
+@media only screen and (max-width: 1200px) {
+    .brand .reason-of-logo .reason-content .number {
+        top: -7px !important;
+    }
 
+    .brand .design-logo .design-logo-detail {
+        padding: 2% 5%;
+    }
 
+        .brand .design-logo .design-logo-detail .design-logo-contact-now {
+            padding: 10px 25px;
+        }
+
+        .brand .design-logo .design-logo-detail > div:nth-child(2) {
+            height: 20%;
+        }
+
+    .brand .section-col-image-logo-brand .single-image {
+        width: 400px;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    .brand .h1 {
+        font-size: 4rem;
+    }
+
+    .brand .reason-of-logo .reason-content {
+        width: 24%;
+    }
+
+    .brand .section-procedure > img {
+        width: 150px;
+    }
+
+    .brand .section-procedure .img-left {
+        top: 0;
+    }
+
+    .brand .section-procedure .img-right {
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .brand .background-design-mobile {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        z-index: -1;
+    }
+
+    .brand .brand-title {
+        font-size: 34px !important;
+    }
+
+    .brand .question .content-question {
+        padding: 0 7%;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .brand .section-col-image-logo-brand {
+        position: absolute;
+        right: 0;
+        top: 10%;
+    }
+
+        .brand .section-col-image-logo-brand .single-image {
+            width: 80%;
+        }
+
+    .brand .floatCenter > div:nth-child(1) {
+        max-width: 60% !important;
+    }
+
+    .brand .brand-title {
+        font-size: 29px !important;
+    }
+
+    .brand .reason-of-logo {
+        flex-wrap: wrap;
+    }
+
+        .brand .reason-of-logo .reason-content {
+            width: 45%;
+            margin-bottom: 10rem !important;
+        }
+
+            .brand .reason-of-logo .reason-content .number {
+                font-size: 35px;
+            }
+
+    .brand .design-logo .design-logo-detail .design-logo-detail-01 {
+        font-size: 29px;
+    }
+
+    .brand .design-logo .design-logo-detail .design-logo-detail-02 {
+        font-size: 20px;
+    }
+
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-count {
+        font-size: 29px;
+    }
+
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-text {
+        font-size: 20px;
+    }
+
+    .brand .design-logo .design-logo-detail .design-logo-contact-now {
+        font-size: 26px;
+    }
+
+    .brand .section-procedure .procedure .content-procedure .detail-procedure img {
+        width: 40%;
+    }
+
+    .brand .section-commitment .commitment .content-commitment .detail-commitment {
+        width: 22%;
+        padding: 0 2%;
+    }
+
+    .brand .news #news-Content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .brand .news #news-Content .block-new {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+    .brand .section-commitment .commitment .content-commitment .detail-commitment img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand .section-commitment .commitment .content-commitment .detail-commitment .content-detail-commitment {
+        font-size: 16px;
+    }
+    .brand .section-design-action .content-design-action .detail-design-action img {
+        width: 50px;
+        height: 50px;
+    }
+    .brand .section-design-action .content-design-action .detail-design-action .detail-content-design-action{
+        font-size: 16px;
+    }
+    .brand .question .content-question .detail-question{
+        font-size: 20px;
+    }
+    .brand .question .content-question .detail-answer {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .background-design-mobile {
+        top: -7rem;
+        right: 0rem;
+    }
+    .brand .identified-brand .animation-holder .service-icon__holder .animated-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 2rem;
+    }
+    .brand .section-commitment .commitment .content-commitment .detail-commitment img{
+        width: 50px;
+        height: 50px;
+    }
+    .brand .section-commitment .commitment .content-commitment .detail-commitment .content-detail-commitment{
+        font-size: 16px;
+    }
+    .brand .role-of-logo .content-role-of-logo {
+        font-size: 16px;
+    }
+    .brand .reason-of-logo .reason-content .detail-reason-content{
+        font-size: 16px;
+    }
+    .brand .reason-of-logo .reason-content{
+        min-height: 350px;
+    }
+        .brand .reason-of-logo .reason-content .number {
+            font-size: 26px;
+        }
+    .brand .section-reason-of-logo .title-reason-of-logo {
+        padding: 0 5%;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-text{
+        font-size: 16px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-count{
+        font-size: 16px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-detail-02 {
+        font-size: 16px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-contact-now {
+        font-size: 20px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-detail-01 {
+        font-size: 20px;
+    }
+    .brand .design-logo .design-logo-detail .design-logo-product .logo-product{
+        width: 30%;
+    }
+    .brand .design-logo .design-logo-detail > div {
+        justify-content: space-between;
+    }
+}
