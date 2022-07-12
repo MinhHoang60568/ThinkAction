@@ -826,7 +826,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 7.5% 5.5%;
+    padding: 3.5% 5.5%;
 }
 
     .brand .design-logo .design-logo-detail > div {
@@ -834,11 +834,11 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         height: 25%;
     }
 
-    .brand .design-logo .design-logo-detail .design-logo-detail-01 {
-        font-size: 35px;
-        color: #E9A541;
-        font-weight: 700;
-    }
+.brand .design-logo .design-logo-detail .design-logo-detail-01 {
+    font-size: 35px;
+    color: #E9A541;
+    font-weight: 700;
+}
 
     .brand .design-logo .design-logo-detail .design-logo-detail-02 {
         font-size: 25px;
@@ -908,6 +908,27 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     font-size: 35px;
     color: #F15822;
 }
+
+.brand .section-reason-of-logo .brand-include {
+    display: flex;
+    padding: 0 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .brand .section-reason-of-logo .brand-include .block-brand-include {
+        width: 21%;
+        margin-bottom: 5rem;
+    }
+        .brand .section-reason-of-logo .brand-include .block-brand-include .title-block {
+            color: #F15822;
+            font-weight: 500;
+        }
+        .brand .section-reason-of-logo .brand-include .block-brand-include .content-block {
+            margin-top: 2rem;
+            font-weight: 500;
+            color: #000000;
+        }
 
 .brand .reason-of-logo {
     justify-content: space-between;
@@ -1022,6 +1043,9 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .section-procedure > img {
         position: absolute;
         width: 300px;
+    }
+    .brand .section-procedure .procedure-brand {
+        width: 370px !important;
     }
 
     .brand .section-procedure .procedure {
@@ -1281,7 +1305,22 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .brand .brand-title {
     height: auto;
 }
-
+.brand .img-right-brand {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    top: -35rem;
+}
+.brand .img-left-brand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 305px;
+}
+.brand-identity .design-logo .design-logo-detail > div:nth-child(2) {
+    margin-bottom: 5rem;
+    height: auto !important;
+}
 @media only screen and (max-width: 1200px) {
     .brand .reason-of-logo .reason-content .number {
         top: -7px !important;
@@ -1315,6 +1354,9 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
     .brand .section-procedure > img {
         width: 150px;
+    }
+    .brand .section-procedure .procedure-brand {
+        width: 235px !important;
     }
 
     .brand .section-procedure .img-left {
@@ -1436,6 +1478,12 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     }
     .brand .section-reason-of-logo .c-portfolio-block__single {
         padding-bottom: 0 !important;
+    }
+        .brand-identity .design-logo > img {
+        min-height: 650px !important;
+    }
+    .brand .design-logo .design-logo-detail > div:nth-child(3){
+        height: 100px !important;
     }
 }
 
@@ -1591,7 +1639,23 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .reason-of-logo .reason-content .logo-reason-content img{
         height: 45px;
     }
+    .brand .design-logo .design-logo-detail > div:nth-child(3) {
+        height: 80px !important;
+    }
+    .brand .section-reason-of-logo .brand-include{
+        padding: 0 5%;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+        .brand .section-reason-of-logo .brand-include .block-brand-include {
+            width: 45%;
+            text-align: center;
+        }
+    .brand .brand-title {
+        font-size: 26px !important;
+    }
 }
+
 @media only screen and (max-width: 550px) {
     .brand .identified-brand .identified-logo{
         flex-wrap: wrap;
@@ -1602,6 +1666,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .identified-brand #design-services-box {
         padding-top: 30px;
         width: 100%;
+        justify-content: space-between;
     }
         .brand .identified-brand #design-services-box .animation-holder {
             width: 20%;
@@ -1614,5 +1679,11 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     }
     .brand .design-logo .design-logo-detail > div {
         height: 20%;
+    }
+        .brand .design-logo .design-logo-detail > div:nth-child(1) {
+            height: 100px !important;
+        }
+    .brand .section-procedure .procedure .content-procedure .detail-procedure-left{
+        margin-bottom: 3rem;
     }
 }
