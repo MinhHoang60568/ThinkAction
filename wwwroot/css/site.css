@@ -820,6 +820,15 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     background: #231F20;
     opacity: 0.8;
 }
+.brand .Backgroung-tvc-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #231F20;
+    opacity: 0.8;
+}
 
 .brand .design-logo .design-logo-detail {
     position: absolute;
@@ -845,6 +854,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         font-size: 25px;
         color: #FFFFFF;
         font-weight: 400;
+        text-align: justify !important;
     }
 
     .brand .design-logo .design-logo-detail .underlined {
@@ -889,12 +899,13 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     width: 100%;
 }
 
-    .brand .role-of-logo .title-role-of-logo {
+    .brand .title-role-of-logo {
         text-align: center;
         width: 100%;
         font-weight: 700;
         font-size: 35px;
         color: #F15822;
+        padding: 0 10%;
     }
 
     .brand .role-of-logo .content-role-of-logo {
@@ -1342,10 +1353,10 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         width: 32.5%;
     }
         .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail {
-            height: 42%;
+            min-height: 55%;
             padding: 10% 7%;
         }
-            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo {
+            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo > img{
                 width: 91px;
                 height: 91px;
             }
@@ -1358,7 +1369,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             }
         .brand .tvc-advantage .block-tvc-advantage .advance-block-one-text {
             position: absolute;
-            bottom: 0;
+            bottom: -10%;
             font-weight: 400;
             font-size: 16px;
             color: #FFFFFF;
@@ -1392,11 +1403,11 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25% !important;
 }
     .brand .video-tvc iframe {
         position: absolute;
-        top: 5% ;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -1447,6 +1458,13 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .section-procedure .img-right {
         top: 40%;
     }
+    .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-detail-text{
+        padding-top: 10%;
+    }
+    .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo > img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1478,7 +1496,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         }
 
     .brand .floatCenter > div:nth-child(1) {
-        max-width: 60% !important;
+        max-width: 59% !important;
     }
 
     .brand .brand-title {
@@ -1735,6 +1753,52 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .brand-title {
         font-size: 26px !important;
     }
+
+    .brand .section-commitment .commit-tvc .commitment .content-commitment {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        .brand .section-commitment .commit-tvc .commitment .content-commitment .detail-commitment {
+            margin-top: 5%;
+            width: 100%;
+        }
+            .brand .section-commitment .commit-tvc .commitment .content-commitment .detail-commitment .content-detail-commitment {
+                font-weight: normal;
+            }
+    .brand .tvc-advantage {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0 !important;
+    }
+        .brand .tvc-advantage .block-tvc-advantage{
+            width: 100%;
+        }
+        .brand .tvc-advantage .block-tvc-advantage:nth-child(1) > img{
+            height: 100% !important;
+        }
+            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail {
+                min-height: 50%;
+            }
+                .brand .tvc-advantage .block-tvc-advantage:nth-child(2) .block-tvc-advantage-detail:nth-child(1) {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    margin-bottom: 5%;
+                }
+                .brand .tvc-advantage .block-tvc-advantage:nth-child(3) .block-tvc-advantage-detail:nth-child(2) {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    margin-top: 5%;
+                }
+
+            .brand .tvc-advantage .block-tvc-advantage .advance-block-one-text {
+                bottom: 0;
+            }
+            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo > img{
+                widows: 100%;
+                height: 100%;
+            }
+        .brand .tvc-advantage .block-tvc-advantage{
+            margin-top: 15%;
+        }
+
 }
 
 @media only screen and (max-width: 550px) {
