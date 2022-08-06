@@ -701,6 +701,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .brand .section-col-image-logo-brand .single-image {
     width: 500px;
     margin: auto;
+    max-height: 710px;
 }
 
 .brand-image img.img-brand {
@@ -885,6 +886,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .brand .role-of-logo {
     display: inline-block !important;
     padding: 0 10%;
+    width: 100%;
 }
 
     .brand .role-of-logo .title-role-of-logo {
@@ -899,6 +901,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         font-weight: 400;
         font-size: 20px;
         color: #000000;
+        text-align: justify;
     }
 
 .brand .section-reason-of-logo .title-reason-of-logo {
@@ -1033,6 +1036,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             color: #FFFFFF;
             padding-left: 2rem;
             display: flex;
+            text-align: justify;
         }
 
 .brand .section-procedure {
@@ -1212,6 +1216,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     padding-right: 5%;
     opacity: .5;
     margin-top: 2rem;
+    text-align: justify;
 }
 
 @-webkit-keyframes rotate {
@@ -1304,6 +1309,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 }
 .brand .brand-title {
     height: auto;
+    text-align: center;
 }
 .brand .img-right-brand {
     position: absolute;
@@ -1321,6 +1327,81 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     margin-bottom: 5rem;
     height: auto !important;
 }
+.text-color-white{
+    color: white !important;
+}
+.brand .background-color-orangered {
+    background: linear-gradient(94.58deg, #F15822 8.83%, #F5AA1C 108.78%);
+}
+.brand .tvc-advantage{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+    .brand .tvc-advantage .block-tvc-advantage {
+        width: 32.5%;
+    }
+        .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail {
+            height: 42%;
+            padding: 10% 7%;
+        }
+            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo {
+                width: 91px;
+                height: 91px;
+            }
+            .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-detail-text {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: justify;
+                padding-top: 12%;
+                color: #000000;
+            }
+        .brand .tvc-advantage .block-tvc-advantage .advance-block-one-text {
+            position: absolute;
+            bottom: 0;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+            padding: 10%;
+            text-align: justify;
+        }
+.brand .tvc-beginning .block-tvc-beginning-img-start{
+    display: flex
+}
+.brand .tvc-beginning .block-tvc-beginning-img-start > img{
+    width: 33.33333333333333%;
+}
+.brand .tvc-beginning .block-tvc-beginning-2 {
+    background: linear-gradient(94.58deg, #F15822 8.83%, #F5AA1C 108.78%);
+    text-align: center;
+    min-height: 395px;
+    padding: 5%;
+}
+    .brand .tvc-beginning .block-tvc-beginning-2 .beginning-text {
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFF;
+        min-height: 50px;
+    }
+    .brand .tvc-beginning .block-tvc-beginning-2 .beginning-text-detail {
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+.brand .video-tvc {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+    .brand .video-tvc iframe {
+        position: absolute;
+        top: 5% ;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.75) !important;
+    }
 @media only screen and (max-width: 1200px) {
     .brand .reason-of-logo .reason-content .number {
         top: -7px !important;
