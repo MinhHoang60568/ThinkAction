@@ -717,7 +717,18 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .brand .homepage-slogan {
     font-size: 2rem !important
 }
-
+.brand .font-size16to13{
+    font-size: 16px;
+}
+.brand .font-size25to16{
+    font-size: 25px;
+}
+.brand .font-size20to13{
+    font-size: 20px;
+}
+.brand .font-size20to16{
+    font-size: 20px;
+}
 .brand .identity {
     width: auto;
     display: flex;
@@ -1047,7 +1058,6 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             color: #FFFFFF;
             padding-left: 2rem;
             display: flex;
-            text-align: justify;
         }
 
 .brand .section-procedure {
@@ -1385,7 +1395,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 .brand .tvc-beginning .block-tvc-beginning-2 {
     background: linear-gradient(94.58deg, #F15822 8.83%, #F5AA1C 108.78%);
     text-align: center;
-    min-height: 395px;
+    min-height: 255px;
     padding: 5%;
 }
     .brand .tvc-beginning .block-tvc-beginning-2 .beginning-text {
@@ -1563,7 +1573,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         font-size: 16px;
     }
     .brand .section-design-action .content-design-action .detail-design-action img {
-        width: 50px;
+        width: 37px;
         height: 50px;
     }
     .brand .section-design-action .content-design-action .detail-design-action .detail-content-design-action{
@@ -1579,7 +1589,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         padding-bottom: 0 !important;
     }
         .brand-identity .design-logo > img {
-        min-height: 650px !important;
+        min-height: 550px !important;
     }
     .brand .design-logo .design-logo-detail > div:nth-child(3){
         height: 100px !important;
@@ -1607,13 +1617,13 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         height: 50px;
     }
     .brand .section-commitment .commitment .content-commitment .detail-commitment .content-detail-commitment{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .role-of-logo .content-role-of-logo {
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .reason-of-logo .reason-content .detail-reason-content{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .reason-of-logo .reason-content{
         min-height: 350px;
@@ -1627,19 +1637,19 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         padding: 0 5%;
     }
     .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-text{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .design-logo .design-logo-detail .design-logo-product .logo-product .logo-product-count{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .design-logo .design-logo-detail .design-logo-detail-02 {
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .design-logo .design-logo-detail .design-logo-contact-now {
-        font-size: 20px;
+        font-size: 13px;
     }
     .brand .design-logo .design-logo-detail .design-logo-detail-01 {
-        font-size: 20px;
+        font-size: 16px;
     }
     .brand .design-logo .design-logo-detail .design-logo-product .logo-product{
         width: 30%;
@@ -1670,9 +1680,24 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         max-width: none !important;
     }
     .brand .h1{
-        font-size: 30px;
+        font-size: 20px;
     }
-    .brand .floatCenter > div:nth-child(1){
+    .brand .homepage-slogan{
+        font-size: 13px !important;
+    }
+    .brand .font-size16to13 {
+        font-size: 13px !important;
+    }
+    .brand .font-size26to16 {
+        font-size: 16px;
+    }
+    .brand .font-size20to13 {
+        font-size: 13px !important;
+    }
+    .brand .font-size20to16 {
+        font-size: 16px;
+    }
+    .brand .floatCenter > div:nth-child(1) {
         padding: 0 5%;
     }
     .brand .role-of-logo{
@@ -1704,6 +1729,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
     .brand .section-procedure .procedure .content-procedure .detail-procedure .step-procedure{
         min-width: 0 !important;
         width: 50%;
+        font-size: 13px;
     }
     .brand .section-procedure .procedure .content-procedure .detail-procedure img{
         width: 50%;
@@ -1727,10 +1753,10 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         padding: 0 5%;
     }
     .brand .question .content-question .detail-question{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .question .content-question .detail-answer{
-        font-size: 16px;
+        font-size: 13px;
     }
     .brand .question .content-question .detail-question .icon-UpDown{
         top: 10px;
@@ -1751,7 +1777,7 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
             text-align: center;
         }
     .brand .brand-title {
-        font-size: 26px !important;
+        font-size: 16px !important;
     }
 
     .brand .section-commitment .commit-tvc .commitment .content-commitment {
@@ -1773,8 +1799,12 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
         .brand .tvc-advantage .block-tvc-advantage{
             width: 100%;
         }
+        .brand .tvc-advantage .block-tvc-advantage:nth-child(1){
+            height: 400px;
+        }
         .brand .tvc-advantage .block-tvc-advantage:nth-child(1) > img{
             height: 100% !important;
+            width: 100% !important
         }
             .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail {
                 min-height: 50%;
@@ -1790,15 +1820,38 @@ body #hs-modal #hs-modal-content #hs-modal-footer #hs-modal-save-settings {
 
             .brand .tvc-advantage .block-tvc-advantage .advance-block-one-text {
                 bottom: 0;
+                padding: 10% 7%;
             }
             .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-logo > img{
-                widows: 100%;
                 height: 100%;
             }
         .brand .tvc-advantage .block-tvc-advantage{
             margin-top: 15%;
         }
-
+    .brand .zalo-link {
+        font-size: 16px;
+    }
+    .brand .reason-of-logo .reason-content .title-logo-reason-content{
+        font-size: 13px;
+    }
+    .brand .section-design-action .content-design-action .detail-design-action .detail-content-design-action{
+        font-size: 13px;
+    }
+    .brand .news #news-Content .block-new .title-new{
+        font-size: 16px;
+    }
+    .brand .news #news-Content .block-new .content-new{
+        font-size: 13px;
+    }
+    .brand .font-weight700{
+        font-weight: 700 !important;
+    }
+    .brand .tvc-advantage .block-tvc-advantage .block-tvc-advantage-detail .block-tvc-advantage-detail-text{
+        padding-top: 0%;
+    }
+    .brand .tvc-beginning{
+        margin-top: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 550px) {

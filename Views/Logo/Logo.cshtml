@@ -29,9 +29,9 @@
                                     <p id="HOMEPAGE_INTRODUCE_PC" class="mt-30 homepage-slogan">
                                         Điểm chạm khởi đầu mang bản sắc thương hiệu
                                     </p>
-                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span style="font-size:16px;">Nền tảng xây dựng đồng bộ thương hiệu</span></p>
-                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span style="font-size:16px;">Thể hiện tầm nhìn của doanh nghiệp</span></p>
-                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span style="font-size:16px;">Truyền đạt xây dựng niềm tin đối với khách hàng</span></p>
+                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span class="font-size16to13">Nền tảng xây dựng đồng bộ thương hiệu</span></p>
+                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span class="font-size16to13">Thể hiện tầm nhìn của doanh nghiệp</span></p>
+                                    <p class="wpb_animate_when_almost_visible ro_3 mt-20" style="color: #F15822 !important;"><img src="~/images/brand/checkbox.png" style="height:16px; margin-right: 7px;"><span class="font-size16to13">Truyền đạt xây dựng niềm tin đối với khách hàng</span></p>
                                     <div class="c-headings-block__learn-more wpb_animate_when_almost_visible ro_4 mt-30 c-headings-block__learn-more-button">
                                         <a class="zalo-link" style="color: white !important;">
                                             <div class="glass-layout"></div>
@@ -50,7 +50,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="c-entry__content-name">
-                                                    <div>Thiết Kế Nhận Diện</div>
+                                                    <div class="font-size16to13">Thiết Kế Nhận Diện</div>
                                                 </div>
                                             </div>
                                             <div id="design-services-box" class="services s-cms-content fadeInUp">
@@ -402,7 +402,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="c-vc-column-text u-text-center">
-                                                                        <div class="wpb_animate_when_almost_visible ro_4 mt-20" style="color: #000000; padding: 0 5%;">
+                                                                        <div class="wpb_animate_when_almost_visible ro_4 mt-20 font-size16to13" style="color: #000000; padding: 0 5%;">
                                                                             Bạn muốn tham khảo thêm thiết kế trong lĩnh vực thiết kế của bạn?
                                                                         </div>
                                                                         <div class="c-headings-block__learn-more mt-20 c-headings-block__learn-more-button wpb_animate_when_almost_visible ro_4 mt-10">
@@ -751,16 +751,19 @@
 
         $.ajax(settings).done(function (response) {
             var data = response.data.slice(1);
+            data.sort();
+            data.reverse();
             var rawhtml = '';
             $.each(data, function (key, value) {
-                if (key < 3) {
+                console.log(value);
+                if ((value.ArticleId == 261 || value.ArticleId == 258 || value.ArticleId == 257)) {
                     var link = "https://thinkaction.vn/chi-tiet-tin-tuc?slug=" + value.Slug + "&id=" + value.ArticleId;
                     var imageLink = "https://cms.thinkaction.vn/" + value.Thumbnail;
-                    var html =  '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="block-new">' +
-                                    ' <img src="' + imageLink + '" />' +
-                                    '<div class="title-new mt-30">' + value.Title + '</div>' +
-                                    '<div class="content-new mt-20">' + value.SummaryContent+'</div>' +
-                                '</div >';
+                    var html = '<div onclick="window.open(\'' + link + '\',\'_blank\');" style="cursor: pointer;" class="block-new">' +
+                        ' <img src="' + imageLink + '" />' +
+                        '<div class="title-new mt-30">' + value.Title + '</div>' +
+                        '<div class="content-new mt-20">' + value.SummaryContent + '</div>' +
+                        '</div >';
                     rawhtml += html;
 
                 }
